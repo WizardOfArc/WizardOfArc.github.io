@@ -12,11 +12,13 @@ h1 {
     display: block;
     margin: auto;
 
-    @media (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .header-image {
         width: 100%;
     }
 }
-
 #woa_words {
     margin-top: calc(50% * -0.19);
 }
