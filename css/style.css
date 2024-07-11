@@ -4,6 +4,7 @@ h1 {
 }
 
 .header-image {
-    width: 33%;
+    width: 50%;
     display: block;
+    margin: auto;
 }
