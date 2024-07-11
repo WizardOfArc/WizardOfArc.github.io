@@ -11,8 +11,17 @@ h1 {
     width: 50%;
     display: block;
     margin: auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 #woa_words {
     margin-top: calc(50% * -0.19);
+}
+
+#clock {
+    text-align: center;
+    margin: auto;
 }
