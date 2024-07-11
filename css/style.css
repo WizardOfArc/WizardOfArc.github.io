@@ -1,10 +1,15 @@
 h1 {
-    color: #33D;
+    color: #3f006a;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .header-image {
     width: 50%;
     display: block;
     margin: auto;
+}
+
+#woa_words {
+    margin-top: calc(50% * -0.19);
 }
