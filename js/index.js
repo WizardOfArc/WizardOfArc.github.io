@@ -23,7 +23,7 @@ let woa_functions = {
         bandTable.className = "band-table"
         let label = document.createElement("span");
         label.className = "members-label";
-        lebel.innerHTML = "Members";
+        label.innerHTML = "Members";
         bandTable.appendChild(label);
 
         fetch('./data/band_members.json')
