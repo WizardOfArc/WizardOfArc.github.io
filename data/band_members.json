@@ -1,0 +1,20 @@
+{
+    "members" : [
+        {
+            "name": "Azi",
+            "instruments": ["voice", "bass"]
+        },
+        {
+            "name": "Doug",
+            "instruments": ["synth", "voice"]
+        },
+        {
+            "name": "Nik",
+            "instruments": ["saxophone", "voice"]
+        },
+        {
+            "name": "TBD",
+            "instruments": ["drums"]
+        }
+    ]
+}
