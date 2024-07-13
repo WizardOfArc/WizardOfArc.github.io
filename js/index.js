@@ -20,7 +20,10 @@ let woa_functions = {
             return bandRow;
         };
         let bandTable = document.createElement("div");
-        let label = document.createTextNode("Members");
+        bandTable.className = "band-table"
+        let label = document.createElement("span");
+        label.className = "members-label";
+        lebel.innerHTML = "Members";
         bandTable.appendChild(label);
 
         fetch('./data/band_members.json')

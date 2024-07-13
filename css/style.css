@@ -25,9 +25,11 @@ h1 {
 
 #band-members {
     text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+    .band-table {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .name-cell {
