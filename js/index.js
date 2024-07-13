@@ -11,6 +11,7 @@ let woa_functions = {
             bandRow.className = "band-row";
             let nameCell = document.createElement("div");
             nameCell.className = "name-cell";
+            nameCell.innerHTML = rowData.name;
             let instrumentList = document.createElement("div");
             instrumentList.className = "instrument-list";
             instrumentList.innerHTML = rowData.instruments.join(", ");
