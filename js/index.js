@@ -24,7 +24,7 @@ let woa_functions = {
         let label = document.createElement("span");
         label.className = "members-label";
         label.innerHTML = "Members";
-        bandTable.appendChild(label);
+        target.appendChild(label);
 
         fetch('./data/band_members.json')
           .then((response) => response.json())
