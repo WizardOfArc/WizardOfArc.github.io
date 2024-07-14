@@ -1,11 +1,69 @@
-let woa_functions = {
-    dummyTest: (words) => console.log(`Dummy testing ${words}`),
-    loadJson: (filename) => {
-        fetch(filename)
-        .then((response) => response.json())
-        .then((json) => console.log(json));
-    },
-    renderBandTable: (target) => {
+class Woa {
+    constructor() {
+        console.log("Woa instantiated");
+    };
+
+    dataFilePath(fileName) {
+        if(window.location.pathname === '/'){
+            console.log('at root...');
+            return `./data/${fileName}`;
+        }
+        return `../data/${fileName}`;
+    }
+
+    renderComponent(container, file) {
+        let path = '';
+        if(window.location.pathname === '/'){
+            console.log('at root...');
+            path = `./html/${file}`;
+        } else {
+            path = `./${file}`;
+        }
+        fetch(path)
+        .then((response) => response.text())
+        .then((data) => {
+           document.querySelector(container).innerHTML = data;
+        })
+    }
+
+    renderMusicLinks(target) {
+        console.log("rendering music links");
+        function renderLinkRow(rowData) {
+            let linkRow = document.createElement("div");
+            linkRow.className = "link-row";
+            if(rowData.thumbnail){
+                let thumbnail = document.createElement("img");
+                thumbnail.src = rowData.thumbnail;
+                linkRow.appendChild(thumbnail);
+            }
+            let link = document.createElement("a");
+            link.className = "music-link";
+            link.innerHTML = rowData.label;
+            link.href = rowData.url;
+            link.target = "_blank";
+            linkRow.appendChild(link);
+            return linkRow;
+        }
+        let musicLinkTable = document.createElement("div");
+        musicLinkTable.className = "music-link-table";
+        let label = document.createElement("span");
+        label.className = "music-link-label";
+        let linkHeading = document.createElement("h1");
+        linkHeading.innerHTML = "Music Links";
+        target.appendChild(linkHeading);
+
+        let path = this.dataFilePath('music_links.json');
+        fetch(path)
+          .then((response) => response.json())
+          .then((data) => {
+            data.music_links.forEach((mLink) => {
+                target.appendChild(renderLinkRow(mLink));
+            })
+          }
+        )
+    }
+
+    renderBandTable(target) {
         function renderBandRow(rowData) {
             let bandRow = document.createElement("div");
             bandRow.className = "band-row";
@@ -26,7 +84,8 @@ let woa_functions = {
         label.innerHTML = "Members";
         target.appendChild(label);
 
-        fetch('./data/band_members.json')
+        let path = this.dataFilePath('band_members.json'); 
+        fetch(path)
           .then((response) => response.json())
           .then((data) => {
                 data.members.forEach( (member) => {
@@ -34,29 +93,18 @@ let woa_functions = {
                 });
                 target.appendChild(bandTable);
           })
-    },
-    renderComponent: (container, file) => {
-        let path = '';
-        if(window.location.pathname === '/'){
-            console.log('at root...');
-            path = `./html/${file}`;
-        } else {
-            path = `./${file}`;
-        }
-        fetch(path)
-        .then((response) => response.text())
-        .then((data) => {
-           document.querySelector(container).innerHTML = data;
-        })
-    },
-};
+    }
+};          
 
 document.addEventListener("DOMContentLoaded", () => {
-    woa_functions.dummyTest('I loaded the Doc');
+    let woa_functions = new Woa();
     let bandMemberContainer = document.querySelector('#band-members');
     if(bandMemberContainer) {
         woa_functions.renderBandTable(bandMemberContainer);
     }
-    console.log(`You are here: ${window.location.pathname}`);
+    let musicLinks = document.querySelector('#music-links');
+    if(musicLinks) {
+        woa_functions.renderMusicLinks(musicLinks);
+    }
     woa_functions.renderComponent('.footer-container', 'footer.html');
 })

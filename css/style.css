@@ -7,6 +7,13 @@ h1 {
     text-align: center;
 }
 
+a { 
+    text-decoration: none;
+    font-weight: bold; 
+    color: #3f006a;
+    padding: 10px;
+}
+
 .header-image {
     width: 50%;
     display: block;
@@ -53,14 +60,12 @@ h1 {
         .links {
             display: flex;
             justify-content: space-between;
-            a { 
-                text-decoration: none;
-                font-weight: bold; 
-                color: #3f006a;
-                padding: 10px;
-            }
         }
     }
+}
+
+#music-links {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
