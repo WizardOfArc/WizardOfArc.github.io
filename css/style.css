@@ -69,6 +69,7 @@ h1 {
     }
 
     .footer-container {
+        position: relative;
         .footer {
             width: 100%;
             margin: 0;
