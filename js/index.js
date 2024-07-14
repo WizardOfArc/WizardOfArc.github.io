@@ -35,10 +35,28 @@ let woa_functions = {
                 target.appendChild(bandTable);
           })
     },
+    renderComponent: (container, file) => {
+        let path = '';
+        if(window.location.pathname === '/'){
+            console.log('at root...');
+            path = `./html/${file}`;
+        } else {
+            path = `./${file}`;
+        }
+        fetch(path)
+        .then((response) => response.text())
+        .then((data) => {
+           document.querySelector(container).innerHTML = data;
+        })
+    },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
     woa_functions.dummyTest('I loaded the Doc');
     let bandMemberContainer = document.querySelector('#band-members');
-    woa_functions.renderBandTable(bandMemberContainer);
+    if(bandMemberContainer) {
+        woa_functions.renderBandTable(bandMemberContainer);
+    }
+    console.log(`You are here: ${window.location.pathname}`);
+    woa_functions.renderComponent('.footer-container', 'footer.html');
 })
