@@ -12,13 +12,14 @@ class Woa {
     }
 
     renderComponent(container, file) {
+        console.log(`rendering ${file} in ${container}`);
         let targetElem = document.querySelector(container);
         if (!targetElem){
             console.log(`${container} is not on this page`);
             return;
         }
         let path = '';
-        if(window.location.pathname === '/'){
+        if(window.location.pathname === '/' || window.location.pathname === '/index.html'){
             console.log('at root...');
             path = `./html/${file}`;
         } else {
@@ -113,5 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     woa_functions.renderComponent('.footer-container', 'footer.html');
     woa_functions.renderComponent('#about-woa', 'about-woa.html');
+    woa_functions.renderComponent('#morphing', 'morphing.html');
 
 })
