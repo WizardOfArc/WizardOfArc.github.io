@@ -204,6 +204,11 @@ a {
     margin: auto;
 }
 
+.centered {
+    margin-top: 20px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
     .header-image {
         width: 100%;
