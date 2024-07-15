@@ -68,8 +68,26 @@ a {
     text-align: center;
 }
 
+#band-members {
+    width: 50%;
+    margin: auto;
+}
+
+#about-woa {
+    text-align: center;
+}
+
+.contact-method {
+    text-align: center;
+    margin: auto;
+}
+
 @media only screen and (max-width: 768px) {
     .header-image {
+        width: 100%;
+    }
+
+    #band-members {
         width: 100%;
     }
 

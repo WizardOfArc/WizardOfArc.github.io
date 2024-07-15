@@ -12,6 +12,11 @@ class Woa {
     }
 
     renderComponent(container, file) {
+        let targetElem = document.querySelector(container);
+        if (!targetElem){
+            console.log(`${container} is not on this page`);
+            return;
+        }
         let path = '';
         if(window.location.pathname === '/'){
             console.log('at root...');
@@ -22,7 +27,7 @@ class Woa {
         fetch(path)
         .then((response) => response.text())
         .then((data) => {
-           document.querySelector(container).innerHTML = data;
+           targetElem.innerHTML = data;
         })
     }
 
@@ -107,4 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
         woa_functions.renderMusicLinks(musicLinks);
     }
     woa_functions.renderComponent('.footer-container', 'footer.html');
+    woa_functions.renderComponent('#about-woa', 'about-woa.html');
+
 })
