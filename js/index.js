@@ -21,9 +21,9 @@ class Woa {
         let path = '';
         if(window.location.pathname === '/' || window.location.pathname === '/index.html'){
             console.log('at root...');
-            path = `./html/${file}`;
+            path = `./html/components/${file}.html`;
         } else {
-            path = `./${file}`;
+            path = `./components/${file}.html`;
         }
         fetch(path)
         .then((response) => response.text())
@@ -73,6 +73,11 @@ class Woa {
         function renderBandRow(rowData) {
             let bandRow = document.createElement("div");
             bandRow.className = "band-row";
+            if(rowData.img){
+                let img = document.createElement("img");
+                img.href = rowData.img;
+                bandRow.appendChild(img);
+            }
             let nameCell = document.createElement("div");
             nameCell.className = "name-cell";
             nameCell.innerHTML = rowData.name;
@@ -112,8 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if(musicLinks) {
         woa_functions.renderMusicLinks(musicLinks);
     }
-    woa_functions.renderComponent('.footer-container', 'footer.html');
-    woa_functions.renderComponent('#about-woa', 'about-woa.html');
-    woa_functions.renderComponent('#morphing', 'morphing.html');
+    woa_functions.renderComponent('.footer-container', 'footer');
+    woa_functions.renderComponent('#about-woa', 'about-woa');
+    woa_functions.renderComponent('#morphing', 'morphing');
 
 })
