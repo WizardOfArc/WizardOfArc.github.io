@@ -221,12 +221,16 @@ a {
 
     #band-members {
         width: 100%;
-        .band-row {
+        .band-table {
             display: block;
             margin: auto;
-            text-align: center;
-            .band-img {
-                height: 100px;
+            .band-row {
+                display: block;
+                margin: auto;
+                text-align: center;
+                .band-img {
+                    height: 100px;
+                }
             }
         }
     }
