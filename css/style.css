@@ -223,9 +223,10 @@ a {
         width: 100%;
         .band-table {
             display: block;
+            width: 100%;
             margin: auto;
             .band-row {
-                display: block;
+                display: inline-block;
                 margin: auto;
                 text-align: center;
                 .band-img {
