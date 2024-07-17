@@ -75,7 +75,8 @@ class Woa {
             bandRow.className = "band-row";
             if(rowData.img){
                 let img = document.createElement("img");
-                img.href = rowData.img;
+                img.src = rowData.img;
+                img.className = "band-img";
                 bandRow.appendChild(img);
             }
             let nameCell = document.createElement("div");
