@@ -44,7 +44,7 @@ class Woa {
             }
             let link = document.createElement("a");
             link.className = "music-link";
-            link.innerHTML = rowData.label;
+            link.innerHTML = `${rowData.label} &lArr;`;
             link.href = rowData.url;
             link.target = "_blank";
             linkRow.appendChild(link);
