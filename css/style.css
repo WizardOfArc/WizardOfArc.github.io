@@ -21,6 +21,12 @@ a {
 
 }
 
+.responsive-full-image {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
 #woa_words {
     margin-top: calc(50% * -0.19);
 }
