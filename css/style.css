@@ -50,8 +50,6 @@ a {
     text-align: center;
     width: 100%;
     padding-top: 10px;
-    position: absolute;
-    bottom: 0;
     .footer {
         width: 50%;
         margin-left: 25%;
@@ -238,7 +236,6 @@ a {
     }
 
     .footer-container {
-        position: relative;
         .footer {
             width: 100%;
             margin: 0;
