@@ -2,23 +2,18 @@
     "members" : [
         {
             "name": "Azi",
-            "instruments": ["voice", "bass"],
+            "instruments": ["voice", "guitar", "bass"],
             "img": "/images/sticker_azi.png"
         },
         {
             "name": "Doug",
-            "instruments": ["synth", "voice"],
+            "instruments": ["synth", "bass synth", "voice"],
             "img": "/images/sticker_doug.png"
         },
         {
             "name": "Nik",
-            "instruments": ["saxophone", "voice"],
+            "instruments": ["saxophone", "drums", "voice"],
             "img": "/images/sticker_nik.png"
-        },
-        {
-            "name": "TBD",
-            "instruments": ["drums"],
-            "img": "/images/sticker_tbd.png"
         }
     ]
 }
