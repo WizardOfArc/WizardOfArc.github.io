@@ -37,16 +37,16 @@ class Woa {
         function renderLinkRow(rowData) {
             let linkRow = document.createElement("div");
             linkRow.className = "link-row";
-            if(rowData.thumbnail){
-                let thumbnail = document.createElement("img");
-                thumbnail.src = rowData.thumbnail;
-                linkRow.appendChild(thumbnail);
-            }
             let link = document.createElement("a");
             link.className = "music-link";
             link.innerHTML = `${rowData.label} &lArr;`;
             link.href = rowData.url;
             link.target = "_blank";
+            if(rowData.thumbnail){
+                let thumbnail = document.createElement("img");
+                thumbnail.src = rowData.thumbnail;
+                link.appendChild(thumbnail);
+            }
             linkRow.appendChild(link);
             return linkRow;
         }
