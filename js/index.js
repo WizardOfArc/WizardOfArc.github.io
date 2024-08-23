@@ -45,6 +45,7 @@ class Woa {
             if(rowData.thumbnail){
                 let thumbnail = document.createElement("img");
                 thumbnail.src = rowData.thumbnail;
+                thumbnail.className = "music-link-thumbnail";
                 link.appendChild(thumbnail);
             }
             linkRow.appendChild(link);

@@ -27,6 +27,10 @@ a {
     margin: auto;
 }
 
+.music-link-thumbnail {
+    width: 45px;
+}
+
 #woa_words {
     margin-top: calc(50% * -0.19);
 }
