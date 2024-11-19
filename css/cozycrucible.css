@@ -49,3 +49,19 @@ a {
     font-size: 20px;
     padding: 10px;
 }
+.footer-container {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    .footer {
+        width: 50%;
+        margin-left: 25%;
+        .footer-logo {
+            width: 100px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
