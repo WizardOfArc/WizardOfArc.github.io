@@ -29,6 +29,19 @@ h2 {
     height: 200px;
 }
 
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    .spacer {
+        height: 50px;
+    }
+    .crucible-header {
+        height: 500px;
+        background-size: cover;
+    }
+}
+
 ul {
     text-align: left;;
 }
