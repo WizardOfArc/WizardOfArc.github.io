@@ -1,0 +1,51 @@
+body {
+    background-color: #120e08;
+    background-image: url("../images/CozyWithInstruments.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.crucible-header {
+    text-align: center;
+    height: 500px;
+    background-image: url("../images/CozyCrucible.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.spacer {
+    height: 200px;
+}
+
+ul {
+    text-align: left;;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+}
+
+#key-points {
+    width: 300px;
+    margin: auto;
+}
+.description {
+    text-align: center;
+    background-color: rgba(75, 0, 0, 0.75);
+    font-size: 20px;
+    padding: 10px;
+}
