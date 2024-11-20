@@ -72,7 +72,7 @@ class Woa {
             let post = document.createElement("div");
             post.className = "blog-post";
             let date = document.createElement("div");
-            date.innerHTML = postData.woaTime;
+            date.innerHTML = postData.woa_time;
             date.className = "post-date";
             let title = document.createElement("div");
             title.innerHTML = postData.title;
