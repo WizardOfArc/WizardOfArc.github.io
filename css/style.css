@@ -169,3 +169,24 @@ a {
         }
     }
 }
+.post-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-title {
+  border-bottom: solid rgba(0,0,0,0.1) 2px;
+  font-size: 30px;
+}
+
+.blog-post {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.post-date {
+    font-size: 12px;
+    color: #333;
+}

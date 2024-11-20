@@ -51,10 +51,6 @@ class Woa {
             linkRow.appendChild(link);
             return linkRow;
         }
-        let musicLinkTable = document.createElement("div");
-        musicLinkTable.className = "music-link-table";
-        let label = document.createElement("span");
-        label.className = "music-link-label";
         let linkHeading = document.createElement("h1");
         linkHeading.innerHTML = "Music Links";
         target.appendChild(linkHeading);
@@ -68,6 +64,42 @@ class Woa {
             })
           }
         )
+    }
+
+    renderBlogPosts(target) {
+        console.log("rendering blog posts");
+        function renderBlogPost(postData) {
+            let post = document.createElement("div");
+            post.className = "blog-post";
+            let date = document.createElement("div");
+            date.innerHTML = postData.woaTime;
+            date.className = "post-date";
+            let title = document.createElement("div");
+            title.innerHTML = postData.title;
+            title.className = "post-title";
+            let headerPart = document.createElement("div");
+            headerPart.className = "post-header";
+            headerPart.appendChild(title);
+            headerPart.appendChild(date);
+            let postContent = document.createElement("div");
+            postContent.className = "post-content";
+            postData.content.forEach((paragraph) => {
+                let p = document.createElement("p");
+                p.innerHTML = paragraph;
+                postContent.appendChild(p);
+            })
+            post.appendChild(headerPart);
+            post.appendChild(postContent);
+            return post;
+        }
+        let path = this.dataFilePath('blog_posts.json');
+        fetch(path)
+          .then((response) => response.json())
+          .then((data) => {
+            data.posts.forEach((post) => {
+                target.appendChild(renderBlogPost(post));
+            })
+          });
     }
 
     renderBandTable(target) {
@@ -118,6 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let musicLinks = document.querySelector('#music-links');
     if(musicLinks) {
         woa_functions.renderMusicLinks(musicLinks);
+    }
+    let blogPosts = document.querySelector('#blog-posts');
+    if(blogPosts) {
+        woa_functions.renderBlogPosts(blogPosts);
     }
     woa_functions.renderComponent('.footer-container', 'footer');
     woa_functions.renderComponent('#about-woa', 'about-woa');

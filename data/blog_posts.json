@@ -1,0 +1,9 @@
+{
+    "posts": [
+        {
+            "woaTime": "2024:11:19:16:25",
+            "title": "First Post",
+            "content": ["I'm trying out this approach of rendering blog posts. I'm trying to leverage writing paragraphs into strings in a json array. Each new entry in the array should render and a separate 'p' tag","I hope this works out alright. I might also use it to make a Grimoire of music tips instead of a blog. We'll see how it goes."]
+        }
+    ]
+}
