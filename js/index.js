@@ -117,6 +117,7 @@ class Woa {
             let friendLink = document.createElement("a");
             friendLink.className = "friend-link";
             friendLink.href = rowData.url;
+            friendLink.target = "_blank";
             let friendDesc = document.createElement("div");
             friendDesc.className = "friend-desc";
             friendDesc.innerHTML = rowData.description;
