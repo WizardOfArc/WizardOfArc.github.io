@@ -190,3 +190,45 @@ a {
     font-size: 12px;
     color: #333;
 }
+
+#friends-of-woa {
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.friend-link {
+    text-decoration: none;
+}
+
+.friend-name {
+    font-weight: bold;
+    font-size: 30px;
+}   
+
+.friend-header {
+    display: flex;
+    align-items: start;
+}
+
+.friend-row {
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.friend-desc {
+    padding: 10px;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.friend-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

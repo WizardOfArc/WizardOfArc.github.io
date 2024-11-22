@@ -102,6 +102,44 @@ class Woa {
           });
     }
 
+    renderFriends(target) {
+        console.log("rendering friends");
+        function renderFriendRow(rowData) {
+            console.log("rendering friend row", rowData);
+            let friendRow = document.createElement("div");
+            friendRow.className = "friend-row";
+            let friendName = document.createElement("div");
+            friendName.className = "friend-name";
+            friendName.innerHTML = rowData.name;
+            let friendImg = document.createElement("img");
+            friendImg.src = rowData.img;
+            friendImg.className = "friend-img";
+            let friendLink = document.createElement("a");
+            friendLink.className = "friend-link";
+            friendLink.href = rowData.url;
+            let friendDesc = document.createElement("div");
+            friendDesc.className = "friend-desc";
+            friendDesc.innerHTML = rowData.description;
+            let friendHeader = document.createElement("div");
+            friendHeader.className = "friend-header";
+            friendHeader.appendChild(friendImg);
+            friendHeader.appendChild(friendName);
+            friendRow.appendChild(friendHeader);
+            friendRow.appendChild(friendDesc);
+            friendLink.appendChild(friendRow)
+            return friendLink;
+        }
+
+        let path = this.dataFilePath('friends_of_the_wizard.json');
+        fetch(path)
+          .then((response) => response.json())
+          .then((data) => {
+            data.friends.forEach((friend) => {
+                target.appendChild(renderFriendRow(friend));
+            })
+          })
+    }
+
     renderBandTable(target) {
         function renderBandRow(rowData) {
             let bandRow = document.createElement("div");
@@ -154,6 +192,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let blogPosts = document.querySelector('#blog-posts');
     if(blogPosts) {
         woa_functions.renderBlogPosts(blogPosts);
+    }
+    let friends = document.querySelector('#friends-of-woa');
+    if(friends) {
+        woa_functions.renderFriends(friends);
     }
     woa_functions.renderComponent('.footer-container', 'footer');
     woa_functions.renderComponent('#about-woa', 'about-woa');
