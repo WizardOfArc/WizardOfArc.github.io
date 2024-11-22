@@ -11,10 +11,6 @@ body {
 .crucible-header {
     text-align: center;
     height: 500px;
-    background-image: url("../images/CozyCrucible.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     color: rgba(255, 255, 255, 1);
     font-size: 30px;
     font-weight: bold;
@@ -26,7 +22,11 @@ h2 {
 }
 
 .spacer {
-    height: 200px;
+    height: 265px;
+    background-image: url('../images/zyCrucible.svg');
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
 }
 
 
@@ -68,6 +68,13 @@ a {
     }
 }
 
+.wizard-title {
+    margin-bottom: -11px;
+}
+
+.cozy-title {
+    margin-top: -11px;
+}
 
 @media (max-width: 600px) {
     body {
@@ -78,7 +85,6 @@ a {
     }
     .crucible-header {
         height: 400px;
-        background-size: cover;
     }
     .spacer {
         height: 40px;
