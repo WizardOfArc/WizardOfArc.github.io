@@ -81,13 +81,11 @@ a {
         margin: 0;
     }
     .spacer {
-        height: 50px;
+        height: 91px;
+        background-size: 25%;
     }
     .crucible-header {
         height: 400px;
-    }
-    .spacer {
-        height: 40px;
     }
     #key-points {
         width: 400px;
