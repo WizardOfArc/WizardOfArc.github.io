@@ -29,18 +29,6 @@ h2 {
     height: 200px;
 }
 
-@media (max-width: 600px) {
-    body {
-        margin: 0;
-    }
-    .spacer {
-        height: 50px;
-    }
-    .crucible-header {
-        height: 500px;
-        background-size: cover;
-    }
-}
 
 ul {
     text-align: left;;
@@ -53,8 +41,9 @@ a {
 }
 
 #key-points {
-    width: 300px;
+    width: 500px;
     margin: auto;
+    text-align: left;
 }
 .description {
     text-align: center;
@@ -76,5 +65,28 @@ a {
             display: flex;
             justify-content: space-between;
         }
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    .spacer {
+        height: 50px;
+    }
+    .crucible-header {
+        height: 400px;
+        background-size: cover;
+    }
+    .spacer {
+        height: 40px;
+    }
+    #key-points {
+        width: 400px;
+    }
+    .description {
+        width: 400px;
     }
 }
