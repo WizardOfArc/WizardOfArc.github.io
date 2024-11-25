@@ -1,0 +1,58 @@
+body {
+    background-color: #10001b;
+    color: #d699ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.note {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
+.spell-entry {
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+    border-bottom: solid #3f006a 1px;
+}
+
+.spell-name {
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 10px;
+    border-bottom: solid #3f006a 1px;
+    border-right: solid #3f006a 1px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f3e0ff;
+    padding: 10px;
+}
+
+.spell-desc {
+    font-size: 18px;
+    padding: 10px;
+}
+
+#spell-list {
+    border: solid #3f006a 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
