@@ -13,6 +13,9 @@ body {
     justify-content: center;
     margin: auto;
     margin-bottom: 20px;
+}
+
+#grimoire-title {
     height: 170px;
     background-image: url("../images/GrimoireTitle.svg");
     background-repeat: no-repeat;
@@ -72,4 +75,7 @@ a {
     background-size: contain;
     height: 100px;
     width: 200px;
+}
+.content {
+    color: rgb(255, 250, 255);
 }
