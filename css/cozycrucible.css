@@ -69,11 +69,22 @@ a {
 }
 
 .wizard-title {
+    height: 100px;
     margin-bottom: -11px;
+    background-image: url("../images/WizardOfArcWordLogoCozy.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
 }
 
 .cozy-title {
+    height: 100px;
     margin-top: -11px;
+    background-image: url("../images/CozyCrucibleTitle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 @media (max-width: 600px) {
