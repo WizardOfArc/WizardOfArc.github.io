@@ -1,6 +1,11 @@
 {
     "spells": [
         {
+            "name":"Two-Voice Note Against Note",
+            "description": "How to harmonize a given melody in two voices - with the same rhythm",
+            "link": "note_against_note"
+        },
+        {
             "name":"Perpetual Canon",
             "description": "Create a canon or round for given number of voices and time before each entry",
             "link": "perpetual_canon"
