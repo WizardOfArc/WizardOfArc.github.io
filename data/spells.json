@@ -6,6 +6,11 @@
             "link": "note_against_note"
         },
         {
+            "name": "Diminutions",
+            "description": "Breaking a note into smaller notes",
+            "link": "diminutions"
+        },
+        {
             "name":"Perpetual Canon",
             "description": "Create a canon or round for given number of voices and time before each entry",
             "link": "perpetual_canon"
