@@ -39,7 +39,7 @@ class Woa {
             linkRow.className = "link-row";
             let link = document.createElement("a");
             link.className = "music-link";
-            link.innerHTML = `${rowData.label} &lArr;`;
+            link.innerHTML = `${rowData.label}: `;
             link.href = rowData.url;
             link.target = "_blank";
             if(rowData.thumbnail){
