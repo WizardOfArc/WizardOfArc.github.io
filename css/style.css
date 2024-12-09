@@ -114,6 +114,12 @@ a {
 .contact-method {
     text-align: center;
     margin: auto;
+    ul, ol {
+        list-style-type: none;
+        li {
+            padding-bottom: 10px;
+        }
+    }
 }
 
 .centered {
