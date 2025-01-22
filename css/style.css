@@ -1,8 +1,9 @@
 body {
     background-color: #3f006a;
-    background-image: url("../images/WizardWeaving.jpeg");
+    background-image: url("../images/NewWizard.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 center;
     color: #3f006a;
     font-family: Arial, Helvetica, sans-serif;
 }
