@@ -1,11 +1,32 @@
+:root {
+    --primary-color: #3f006a;
+    --secondary-color: #0f000a;
+    --primary-color-dark-mode: #c977ff;
+    --secondary-color-dark-mode: #b892be;
+    --bg-color: #efe0fa;
+    --bg-color-dark-mode: #140020;
+}
+
 body {
-    background-color: #3f006a;
-    background-image: url("../images/NewWizard.png");
+    background-color: var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 center;
-    color: #3f006a;
+    color: var(--primary-color);
+    h1 {
+        color: var(--primary-color);
+    }
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-color-dark-mode);
+        color: var(--secondary-color-dark-mode);
+        h1 {
+            color: var(--secondary-color-dark-mode);
+        }
+    }
 }
 
 @media (max-width: 600px ){
@@ -31,15 +52,20 @@ h1 {
 a { 
     text-decoration: none;
     font-weight: bold; 
-    color: #3f006a;
     padding: 10px;
+    color: var(--primary-color);
+    @media (prefers-color-scheme: dark) {
+      color: var(--primary-color-dark-mode);
+    }
 }
 
 .header-image {
     width: 50%;
     display: block;
     margin: auto;
-
+    @media (prefers-color-scheme: dark) {
+      color: var(--primary-color-dark-mode);
+    }
 }
 
 .responsive-full-image {
@@ -52,8 +78,27 @@ a {
     width: 45px;
 }
 
+#woa_logo {
+    height: 600px;
+    background-image: url("../images/woa_logo_only.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    @media (prefers-color-scheme: dark) {
+      background-image: url("../images/woa_logo_only_light.svg");
+    }
+}
+
 #woa_words {
-    margin-top: calc(50% * -0.19);
+    margin-top: calc((50% * -0.19) + 10px);
+    background-image: url("../images/WizardOfArcWordLogo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    @media (prefers-color-scheme: dark) {
+        background-image: url("../images/WizardOfArcWordLogoDarkMode.svg");
+    }
 }
 
 #band-members {
@@ -86,6 +131,12 @@ a {
         margin-left: 25%;
         .footer-logo {
             width: 100px;
+            height: 75px;
+            margin: auto;
+            background-image: url("../images/woa_logo_only.svg");
+            @media (prefers-color-scheme: dark) {
+              background-image: url("../images/woa_logo_only_light.svg");
+            }
         }
         .links {
             display: flex;
@@ -105,6 +156,20 @@ a {
 
 #about-woa {
     text-align: center;
+    padding: 20px;
+    .about-woa-text {
+        margin: auto;
+        width: 50%;
+    }
+    .about-woa-text-list {
+        text-align: left;
+        width: 30%;
+        margin: auto;
+        border: solid var(--primary-color) 1px;
+        @media (prefers-color-scheme: dark){
+          border-color: var(--primary-color-dark-mode);
+        }
+    }
 }
 
 #the-transformation {
@@ -138,6 +203,13 @@ a {
         width: 100%;
     }
 
+    #woa_logo {
+      height: 200px;
+      margin: auto;
+      background-position-x: 50%;
+      background-size: cover;
+    }
+
     #band-members {
         width: 100%;
         .band-table {
@@ -169,7 +241,11 @@ a {
                 display: block;
                 a {
                     display: block;
-                    border-bottom: solid #ccc 1px;
+                    border-bottom: solid var(--primary-color) 1px;
+                    @media(primary-color-dark-mode: dark){
+
+                      border-color: var(--primary-color-dark-mode);
+                    }
                 }
                 
             }
@@ -184,26 +260,34 @@ a {
 .post-title {
   border-bottom: solid rgba(0,0,0,0.1) 2px;
   font-size: 30px;
+  color: var(--primary-color);
+  @media (prefers-color-scheme: dark){
+    color: var(--primary-color-dark-mode);
+  }
+}
+
+.blog-intro {
+  width: 50%;
+  margin: auto;
 }
 
 .blog-post {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: var(--bg-color);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px var(--secondary-color);
+    @media (prefers-color-scheme: dark){
+      background-color: var(--bg-color-dark-mode);
+      box-shadow: 0 0 10px var(--secondary-color-dark-mode);
+    }
 }
 .post-date {
     font-size: 12px;
-    color: #333;
-}
-
-#friends-of-woa {
-    text-align: center;
-    background-color: rgba(255,255,255,0.5);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    padding: 20px;
+    color: var(--secondary-color);
+    @media (prefers-color-scheme: dark){
+      color: var(--secondary-color-dark-mode);
+    }
 }
 
 .friend-link {
@@ -221,17 +305,26 @@ a {
 }
 
 .friend-row {
-    background-color: rgba(255,255,255,0.5);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px var(--primary-color);
     border-radius: 8px;
     padding: 20px;
+
+    @media(prefers-color-scheme: dark){
+      background-color: var(--bg-color-dark-mode);
+      box-shadow: 0 0 10px var(--primary-color-dark-mode);
+      
+    }
 }
 
 .friend-desc {
     padding: 10px;
     font-size: 15px;
-    color: #333;
+    color: var(--secondary-color);
     text-align: left;
+    @media(prefers-color-scheme: dark){
+      color: var(--secondary-color-dark-mode);
+    }
 }
 
 .friend-img {
@@ -239,3 +332,4 @@ a {
     height: 100px;
     border-radius: 50%;
 }
+

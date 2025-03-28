@@ -1,6 +1,12 @@
 {
     "friends": [
         {
+            "name": "Alchemy Music School",
+            "img": "https://alchemymusicschool.com/wp-content/uploads/2021/04/alchemy_logo_white_015e00820_3982.png",
+            "description": "Remote and in person lessons in voice, guitar, bass, keys, drums, songwriting, band rehearsal, and music production",
+            "url": "https://alchemymusicschool.com"
+        },
+        {
             "name": "The Anklebiters",
             "img": "https://www.biteankles.com/_next/image?url=%2Ffull_band_transparent_square.png&w=828&q=75",
             "description": "The Anklebiters are a Dog Rock band based in Seattle, WA. Skittles, Teddy, and Jake work with their human to write songs about dog life.",
@@ -8,3 +14,5 @@
         }
     ]
 }
+
+
