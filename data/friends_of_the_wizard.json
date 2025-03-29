@@ -8,7 +8,7 @@
         },
         {
             "name": "The Anklebiters",
-            "img": "https://www.biteankles.com/_next/image?url=%2Ffull_band_transparent_square.png&w=828&q=75",
+            "img": "/images/anklebiters_full_band.webp",
             "description": "The Anklebiters are a Dog Rock band based in Seattle, WA. Skittles, Teddy, and Jake work with their human to write songs about dog life.",
             "url": "https://biteankles.com"
         }
