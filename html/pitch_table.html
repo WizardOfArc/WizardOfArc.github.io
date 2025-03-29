@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pitch Table</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <div class="blog-header">
+          <div id="woa_logo" class="header-image"></div>
+            <h1 class="blog-title">Pitch Table</h1>
+        </div>
+        
+        <div class="pitch-table-intro">
+            <p>This is to help with Guitar TAB to midi roll conversion</p>
+        </div>
+
+        <div class="pitch-table-header">
+          <div>MIDI note</div> 
+          <div class="ost str6">OST str6</div> 
+          <div class="ost str5">OST str5</div> 
+          <div class="ost str4">OST str4</div> 
+          <div class="ost str3">OST str3</div> 
+          <div class="ost str2">OST str2</div> 
+          <div class="ost str1">OST str1</div> 
+          <div class="nst str6">NST str6</div> 
+          <div class="nst str5">NST str5</div> 
+          <div class="nst str4">NST str4</div> 
+          <div class="nst str3">NST str3</div> 
+          <div class="nst str2">NST str2</div> 
+          <div class="nst str1">NST str1</div> 
+          <div>Note Name</div>
+        </div>
+        <!--- middle C is 40th chromatic key -->
+        <!--- lowest note is an A -->
+        <div id="pitch-rows" class="pitch-rows-container">
+          <div id="pkey88" class="pitch-table-row note-natural">
+            <div class="midi-note">108</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey87" class="pitch-table-row note-natural">
+            <div class="midi-note">107</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey86" class="pitch-table-row note-accidental">
+            <div class="midi-note">106</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey85" class="pitch-table-row note-natural">
+            <div class="midi-note">105</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey84" class="pitch-table-row note-accidental">
+            <div class="midi-note">104</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey83" class="pitch-table-row note-natural">
+            <div class="midi-note">103</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey82" class="pitch-table-row note-accidental">
+            <div class="midi-note">102</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F#/G#</div>
+          </div>
+          <div id="pkey81" class="pitch-table-row note-natural">
+            <div class="midi-note">101</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey80" class="pitch-table-row note-natural">
+            <div class="midi-note">100</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey79" class="pitch-table-row note-accidental">
+            <div class="midi-note">99</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey78" class="pitch-table-row note-natural">
+            <div class="midi-note">98</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey77" class="pitch-table-row note-accidental">
+            <div class="midi-note">97</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey76" class="pitch-table-row note-natural">
+            <div class="midi-note">96</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey75" class="pitch-table-row note-natural">
+            <div class="midi-note">95</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey74" class="pitch-table-row note-accidental">
+            <div class="midi-note">94</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey73" class="pitch-table-row note-natural">
+            <div class="midi-note">93</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey72" class="pitch-table-row note-accidental">
+            <div class="midi-note">92</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret">24</div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey71" class="pitch-table-row note-natural">
+            <div class="midi-note">91</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret">23</div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey70" class="pitch-table-row note-accidental">
+            <div class="midi-note">90</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret">22</div> 
+            <div class="note-name">F#/Gb</div>
+          </div>
+          <div id="pkey69" class="pitch-table-row note-natural">
+            <div class="midi-note">89</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret">22</div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey68" class="pitch-table-row note-natural">
+            <div class="midi-note">88</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret">24</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">24</div> 
+            <div class="nst str1 fret">21</div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey67" class="pitch-table-row note-accidental">
+            <div class="midi-note">87</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret">23</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">23</div> 
+            <div class="nst str1 fret">20</div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey66" class="pitch-table-row note-natural">
+            <div class="midi-note">86</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret">22</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">22</div> 
+            <div class="nst str1 fret">19</div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey65" class="pitch-table-row note-accidental">
+            <div class="midi-note">85</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret">21</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">21</div> 
+            <div class="nst str1 fret">18</div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey64" class="pitch-table-row note-natural">
+            <div class="midi-note">84</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret">20</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">20</div> 
+            <div class="nst str1 fret">17</div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey63" class="pitch-table-row note-natural">
+            <div class="midi-note">83</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret">24</div> 
+            <div class="ost str1 fret">19</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">19</div> 
+            <div class="nst str1 fret">16</div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey62" class="pitch-table-row note-accidental">
+            <div class="midi-note">82</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret">23</div> 
+            <div class="ost str1 fret">18</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret">18</div> 
+            <div class="nst str1 fret">15</div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey61" class="pitch-table-row note-natural">
+            <div class="midi-note">81</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret">22</div> 
+            <div class="ost str1 fret">17</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">24</div> 
+            <div class="nst str2 fret">17</div> 
+            <div class="nst str1 fret">14</div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey60" class="pitch-table-row note-accidental">
+            <div class="midi-note">80</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret">21</div> 
+            <div class="ost str1 fret">16</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">23</div> 
+            <div class="nst str2 fret">16</div> 
+            <div class="nst str1 fret">13</div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey59" class="pitch-table-row note-natural">
+            <div class="midi-note">79</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret">24</div> 
+            <div class="ost str2 fret">20</div> 
+            <div class="ost str1 fret">15</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">22</div> 
+            <div class="nst str2 fret">15</div> 
+            <div class="nst str1 fret">12</div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey58" class="pitch-table-row note-accidental">
+            <div class="midi-note">78</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret">23</div> 
+            <div class="ost str2 fret">19</div> 
+            <div class="ost str1 fret">14</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">21</div> 
+            <div class="nst str2 fret">14</div> 
+            <div class="nst str1 fret">11</div> 
+            <div class="note-name">F#/Gb</div>
+          </div>
+          <div id="pkey57" class="pitch-table-row note-natural">
+            <div class="midi-note">77</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret">22</div> 
+            <div class="ost str2 fret">18</div> 
+            <div class="ost str1 fret">13</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">20</div> 
+            <div class="nst str2 fret">13</div> 
+            <div class="nst str1 fret">10</div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey56" class="pitch-table-row note-natural">
+            <div class="midi-note">76</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret">21</div> 
+            <div class="ost str2 fret">17</div> 
+            <div class="ost str1 fret">12</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">19</div> 
+            <div class="nst str2 fret">12</div> 
+            <div class="nst str1 fret">09</div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey55" class="pitch-table-row note-accidental">
+            <div class="midi-note">75</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret">20</div> 
+            <div class="ost str2 fret">16</div> 
+            <div class="ost str1 fret">11</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret">18</div> 
+            <div class="nst str2 fret">11</div> 
+            <div class="nst str1 fret">08</div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey54" class="pitch-table-row note-natural">
+            <div class="midi-note">74</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret">24</div> 
+            <div class="ost str3 fret">19</div> 
+            <div class="ost str2 fret">15</div> 
+            <div class="ost str1 fret">10</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">24</div> 
+            <div class="nst str3 fret">17</div> 
+            <div class="nst str2 fret">10</div> 
+            <div class="nst str1 fret">07</div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey53" class="pitch-table-row note-accidental">
+            <div class="midi-note">73</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret">23</div> 
+            <div class="ost str3 fret">18</div> 
+            <div class="ost str2 fret">14</div> 
+            <div class="ost str1 fret">09</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">23</div> 
+            <div class="nst str3 fret">16</div> 
+            <div class="nst str2 fret">09</div> 
+            <div class="nst str1 fret">06</div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey52" class="pitch-table-row note-natural">
+            <div class="midi-note">72</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret">22</div> 
+            <div class="ost str3 fret">17</div> 
+            <div class="ost str2 fret">13</div> 
+            <div class="ost str1 fret">08</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">22</div> 
+            <div class="nst str3 fret">15</div> 
+            <div class="nst str2 fret">08</div> 
+            <div class="nst str1 fret">05</div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey51" class="pitch-table-row note-natural">
+            <div class="midi-note">71</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret">21</div> 
+            <div class="ost str3 fret">16</div> 
+            <div class="ost str2 fret">12</div> 
+            <div class="ost str1 fret">07</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">21</div> 
+            <div class="nst str3 fret">14</div> 
+            <div class="nst str2 fret">07</div> 
+            <div class="nst str1 fret">04</div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey50" class="pitch-table-row note-accidental">
+            <div class="midi-note">70</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret">20</div> 
+            <div class="ost str3 fret">15</div> 
+            <div class="ost str2 fret">11</div> 
+            <div class="ost str1 fret">06</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">20</div> 
+            <div class="nst str3 fret">13</div> 
+            <div class="nst str2 fret">06</div> 
+            <div class="nst str1 fret">03</div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey49" class="pitch-table-row note-natural">
+            <div class="midi-note">69</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret">24</div> 
+            <div class="ost str4 fret">19</div> 
+            <div class="ost str3 fret">14</div> 
+            <div class="ost str2 fret">10</div> 
+            <div class="ost str1 fret">05</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">19</div> 
+            <div class="nst str3 fret">12</div> 
+            <div class="nst str2 fret">05</div> 
+            <div class="nst str1 fret">02</div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey48" class="pitch-table-row note-accidental">
+            <div class="midi-note">68</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret">23</div> 
+            <div class="ost str4 fret">18</div> 
+            <div class="ost str3 fret">13</div> 
+            <div class="ost str2 fret">09</div> 
+            <div class="ost str1 fret">04</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret">18</div> 
+            <div class="nst str3 fret">11</div> 
+            <div class="nst str2 fret">04</div> 
+            <div class="nst str1 fret">01</div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey47" class="pitch-table-row note-natural">
+            <div class="midi-note">67</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret">22</div> 
+            <div class="ost str4 fret">17</div> 
+            <div class="ost str3 fret">12</div> 
+            <div class="ost str2 fret">08</div> 
+            <div class="ost str1 fret">03</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">24</div> 
+            <div class="nst str4 fret">17</div> 
+            <div class="nst str3 fret">10</div> 
+            <div class="nst str2 fret">03</div> 
+            <div class="nst str1 fret">00</div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey46" class="pitch-table-row note-accidental">
+            <div class="midi-note">66</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret">21</div> 
+            <div class="ost str4 fret">16</div> 
+            <div class="ost str3 fret">11</div> 
+            <div class="ost str2 fret">07</div> 
+            <div class="ost str1 fret">02</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">23</div> 
+            <div class="nst str4 fret">16</div> 
+            <div class="nst str3 fret">09</div> 
+            <div class="nst str2 fret">02</div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F#/Gb</div>
+          </div>
+          <div id="pkey45" class="pitch-table-row note-natural">
+            <div class="midi-note">65</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret">20</div> 
+            <div class="ost str4 fret">15</div> 
+            <div class="ost str3 fret">10</div> 
+            <div class="ost str2 fret">06</div> 
+            <div class="ost str1 fret">01</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">22</div> 
+            <div class="nst str4 fret">15</div> 
+            <div class="nst str3 fret">08</div> 
+            <div class="nst str2 fret">01</div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey44" class="pitch-table-row note-natural">
+            <div class="midi-note">64</div> 
+            <div class="ost str6 fret">24</div> 
+            <div class="ost str5 fret">19</div> 
+            <div class="ost str4 fret">14</div> 
+            <div class="ost str3 fret">09</div> 
+            <div class="ost str2 fret">05</div> 
+            <div class="ost str1 fret">00</div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">21</div> 
+            <div class="nst str4 fret">14</div> 
+            <div class="nst str3 fret">07</div> 
+            <div class="nst str2 fret">00</div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey43" class="pitch-table-row note-accidental">
+            <div class="midi-note">63</div> 
+            <div class="ost str6 fret">23</div> 
+            <div class="ost str5 fret">18</div> 
+            <div class="ost str4 fret">13</div> 
+            <div class="ost str3 fret">08</div> 
+            <div class="ost str2 fret">04</div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">20</div> 
+            <div class="nst str4 fret">13</div> 
+            <div class="nst str3 fret">06</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey42" class="pitch-table-row note-natural">
+            <div class="midi-note">62</div> 
+            <div class="ost str6 fret">22</div> 
+            <div class="ost str5 fret">17</div> 
+            <div class="ost str4 fret">12</div> 
+            <div class="ost str3 fret">07</div> 
+            <div class="ost str2 fret">03</div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">19</div> 
+            <div class="nst str4 fret">12</div> 
+            <div class="nst str3 fret">05</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey41" class="pitch-table-row note-accidental">
+            <div class="midi-note">61</div> 
+            <div class="ost str6 fret">21</div> 
+            <div class="ost str5 fret">16</div> 
+            <div class="ost str4 fret">11</div> 
+            <div class="ost str3 fret">06</div> 
+            <div class="ost str2 fret">02</div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret">18</div> 
+            <div class="nst str4 fret">11</div> 
+            <div class="nst str3 fret">04</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey40" class="pitch-table-row note-natural middle-c">
+            <div class="midi-note">60</div> 
+            <div class="ost str6 fret">20</div> 
+            <div class="ost str5 fret">15</div> 
+            <div class="ost str4 fret">10</div> 
+            <div class="ost str3 fret">05</div> 
+            <div class="ost str2 fret">01</div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">24</div> 
+            <div class="nst str5 fret">17</div> 
+            <div class="nst str4 fret">10</div> 
+            <div class="nst str3 fret">03</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C (mid) </div>
+          </div>
+          <div id="pkey39" class="pitch-table-row note-natural">
+            <div class="midi-note">59</div> 
+            <div class="ost str6 fret">19</div> 
+            <div class="ost str5 fret">14</div> 
+            <div class="ost str4 fret">09</div> 
+            <div class="ost str3 fret">04</div> 
+            <div class="ost str2 fret">00</div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">23</div> 
+            <div class="nst str5 fret">16</div> 
+            <div class="nst str4 fret">09</div> 
+            <div class="nst str3 fret">02</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey38" class="pitch-table-row note-accidental">
+            <div class="midi-note">58</div> 
+            <div class="ost str6 fret">18</div> 
+            <div class="ost str5 fret">13</div> 
+            <div class="ost str4 fret">08</div> 
+            <div class="ost str3 fret">03</div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">22</div> 
+            <div class="nst str5 fret">15</div> 
+            <div class="nst str4 fret">08</div> 
+            <div class="nst str3 fret">01</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey37" class="pitch-table-row note-natural">
+            <div class="midi-note">57</div> 
+            <div class="ost str6 fret">17</div> 
+            <div class="ost str5 fret">12</div> 
+            <div class="ost str4 fret">07</div> 
+            <div class="ost str3 fret">02</div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">21</div> 
+            <div class="nst str5 fret">14</div> 
+            <div class="nst str4 fret">07</div> 
+            <div class="nst str3 fret">00</div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey36" class="pitch-table-row note-accidental">
+            <div class="midi-note">56</div> 
+            <div class="ost str6 fret">16</div> 
+            <div class="ost str5 fret">11</div> 
+            <div class="ost str4 fret">06</div> 
+            <div class="ost str3 fret">01</div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">20</div> 
+            <div class="nst str5 fret">13</div> 
+            <div class="nst str4 fret">06</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey35" class="pitch-table-row note-natural">
+            <div class="midi-note">55</div> 
+            <div class="ost str6 fret">15</div> 
+            <div class="ost str5 fret">10</div> 
+            <div class="ost str4 fret">05</div> 
+            <div class="ost str3 fret">00</div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">19</div> 
+            <div class="nst str5 fret">12</div> 
+            <div class="nst str4 fret">05</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey34" class="pitch-table-row note-accidental">
+            <div class="midi-note">54</div> 
+            <div class="ost str6 fret">14</div> 
+            <div class="ost str5 fret">09</div> 
+            <div class="ost str4 fret">04</div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">18</div> 
+            <div class="nst str5 fret">11</div> 
+            <div class="nst str4 fret">04</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F#/Gb</div>
+          </div>
+          <div id="pkey33" class="pitch-table-row note-natural">
+            <div class="midi-note">53</div> 
+            <div class="ost str6 fret">13</div> 
+            <div class="ost str5 fret">08</div> 
+            <div class="ost str4 fret">03</div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">17</div> 
+            <div class="nst str5 fret">10</div> 
+            <div class="nst str4 fret">03</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey32" class="pitch-table-row note-natural">
+            <div class="midi-note">52</div> 
+            <div class="ost str6 fret">12</div> 
+            <div class="ost str5 fret">07</div> 
+            <div class="ost str4 fret">02</div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">16</div> 
+            <div class="nst str5 fret">09</div> 
+            <div class="nst str4 fret">02</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey31" class="pitch-table-row note-accidental">
+            <div class="midi-note">51</div> 
+            <div class="ost str6 fret">11</div> 
+            <div class="ost str5 fret">06</div> 
+            <div class="ost str4 fret">01</div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">15</div> 
+            <div class="nst str5 fret">08</div> 
+            <div class="nst str4 fret">01</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey30" class="pitch-table-row note-natural">
+            <div class="midi-note">50</div> 
+            <div class="ost str6 fret">10</div> 
+            <div class="ost str5 fret">05</div> 
+            <div class="ost str4 fret">00</div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">14</div> 
+            <div class="nst str5 fret">07</div> 
+            <div class="nst str4 fret">00</div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey29" class="pitch-table-row note-accidental">
+            <div class="midi-note">49</div> 
+            <div class="ost str6 fret">09</div> 
+            <div class="ost str5 fret">04</div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">13</div> 
+            <div class="nst str5 fret">06</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey28" class="pitch-table-row note-natural">
+            <div class="midi-note">48</div> 
+            <div class="ost str6 fret">08</div> 
+            <div class="ost str5 fret">03</div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">12</div> 
+            <div class="nst str5 fret">05</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey27" class="pitch-table-row note-natural">
+            <div class="midi-note">47</div> 
+            <div class="ost str6 fret">07</div> 
+            <div class="ost str5 fret">02</div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">11</div> 
+            <div class="nst str5 fret">04</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey26" class="pitch-table-row note-accidental">
+            <div class="midi-note">46</div> 
+            <div class="ost str6 fret">06</div> 
+            <div class="ost str5 fret">01</div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">10</div> 
+            <div class="nst str5 fret">03</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey25" class="pitch-table-row note-natural">
+            <div class="midi-note">45</div> 
+            <div class="ost str6 fret">05</div> 
+            <div class="ost str5 fret">00</div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">09</div> 
+            <div class="nst str5 fret">02</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey24" class="pitch-table-row note-accidental">
+            <div class="midi-note">44</div> 
+            <div class="ost str6 fret">04</div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">08</div> 
+            <div class="nst str5 fret">01</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey23" class="pitch-table-row note-natural">
+            <div class="midi-note">43</div> 
+            <div class="ost str6 fret">03</div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">07</div> 
+            <div class="nst str5 fret">00</div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey22" class="pitch-table-row note-accidental">
+            <div class="midi-note">42</div> 
+            <div class="ost str6 fret">02</div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">06</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F#/Gb</div>
+          </div>
+          <div id="pkey21" class="pitch-table-row note-natural">
+            <div class="midi-note">41</div> 
+            <div class="ost str6 fret">01</div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">05</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey20" class="pitch-table-row note-natural">
+            <div class="midi-note">40</div> 
+            <div class="ost str6 fret">00</div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">04</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey19" class="pitch-table-row note-accidental">
+            <div class="midi-note">39</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">03</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey18" class="pitch-table-row note-natural">
+            <div class="midi-note">38</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">02</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey17" class="pitch-table-row note-accidental">
+            <div class="midi-note">37</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">01</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey16" class="pitch-table-row note-natural">
+            <div class="midi-note">36</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret">00</div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey15" class="pitch-table-row note-natural">
+            <div class="midi-note">35</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey14" class="pitch-table-row note-accidental">
+            <div class="midi-note">34</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey13" class="pitch-table-row note-natural">
+            <div class="midi-note">33</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A</div>
+          </div>
+          <div id="pkey12" class="pitch-table-row note-accidental">
+            <div class="midi-note">32</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G#/Ab</div>
+          </div>
+          <div id="pkey11" class="pitch-table-row note-natural">
+            <div class="midi-note">31</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">G</div>
+          </div>
+          <div id="pkey10" class="pitch-table-row note-accidental">
+            <div class="midi-note">30</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F#/Gb</div>
+          </div>
+          <div id="pkey09" class="pitch-table-row note-natural">
+            <div class="midi-note">29</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">F</div>
+          </div>
+          <div id="pkey08" class="pitch-table-row note-natural">
+            <div class="midi-note">28</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">E</div>
+          </div>
+          <div id="pkey07" class="pitch-table-row note-accidental">
+            <div class="midi-note">27</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D#/Eb</div>
+          </div>
+          <div id="pkey06" class="pitch-table-row note-natural">
+            <div class="midi-note">26</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">D</div>
+          </div>
+          <div id="pkey05" class="pitch-table-row note-accidental">
+            <div class="midi-note">25</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C#/Db</div>
+          </div>
+          <div id="pkey04" class="pitch-table-row note-natural">
+            <div class="midi-note">24</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">C</div>
+          </div>
+          <div id="pkey03" class="pitch-table-row note-natural">
+            <div class="midi-note">23</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">B</div>
+          </div>
+          <div id="pkey02" class="pitch-table-row note-accidental">
+            <div class="midi-note">22</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A#/Bb</div>
+          </div>
+          <div id="pkey01" class="pitch-table-row note-natural">
+            <div class="midi-note">21</div> 
+            <div class="ost str6 fret"></div> 
+            <div class="ost str5 fret"></div> 
+            <div class="ost str4 fret"></div> 
+            <div class="ost str3 fret"></div> 
+            <div class="ost str2 fret"></div> 
+            <div class="ost str1 fret"></div> 
+            <div class="nst str6 fret"></div> 
+            <div class="nst str5 fret"></div> 
+            <div class="nst str4 fret"></div> 
+            <div class="nst str3 fret"></div> 
+            <div class="nst str2 fret"></div> 
+            <div class="nst str1 fret"></div> 
+            <div class="note-name">A</div>
+          </div>
+        </div>
+        <div class="footer-container"></div>
+    </body>
+</html>
