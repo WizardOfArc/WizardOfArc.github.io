@@ -34,8 +34,7 @@ body {
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin:auto;
 }
 
@@ -84,9 +83,15 @@ a {
     background-size: contain;
     height: 100px;
     width: 200px;
+    margin: auto;
     @media(prefers-color-scheme: dark){
       background-image: url("../images/woa_logo_only_light.svg");
     }
+}
+
+.home-button-anchor {
+  width: 200px;
+  text-align: center;
 }
 .content {
     color: rgb(255, 250, 255);
