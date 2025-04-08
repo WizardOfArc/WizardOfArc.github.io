@@ -1,6 +1,11 @@
 {
     "spells": [
         {
+            "name":"AA (Asynchronous Arrangement)",
+            "description": "Ways of working out the sing arrangement when you can't get together at the same place and time",
+            "link": "asynchronous_arrangement"
+        },
+        {
             "name":"Two-Voice Note Against Note",
             "description": "How to harmonize a given melody in two voices - with the same rhythm",
             "link": "note_against_note"
