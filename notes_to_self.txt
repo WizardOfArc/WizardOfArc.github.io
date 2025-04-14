@@ -1,0 +1,5 @@
+Replace the sheet music pngs with svgs of music graphs
+Music graphs being grids with the x axis being the pulse and meter - use different color lines for different metric stresses, and use the y axis as the "piano" roll
+Each row is a pitch - use default white and gray rectangles
+The have a different color rectangle for the notes themselves.
+
