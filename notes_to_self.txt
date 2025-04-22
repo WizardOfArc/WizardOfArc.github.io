@@ -3,3 +3,6 @@ Music graphs being grids with the x axis being the pulse and meter - use differe
 Each row is a pitch - use default white and gray rectangles
 The have a different color rectangle for the notes themselves.
 
+above is mostly done:
+Rick string gauges:
+45-55-75-105
