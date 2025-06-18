@@ -466,3 +466,37 @@ tr {
   background-color: var(--string6-color);
 }
 
+#countdown_display {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+
+#digital-clock {
+  width: 300px;
+  margin: auto;
+  margin-top: 20%;
+  #digital-clock-face {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #digital-clock-day {
+    font-size: 20px;
+  }
+  #digital-clock-month {
+    font-size: 20px;
+  }
+  #digital-clock-year {
+    font-size: 20px;
+  }
+  #digital-clock-hours {
+    font-size: 20px;
+  }
+  #digital-clock-minutes {
+    font-size: 20px;
+  }
+  #digital-clock-seconds {
+    font-size: 20px;
+  }
+}

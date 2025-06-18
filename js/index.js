@@ -1,6 +1,6 @@
 class Woa {
     constructor() {
-        console.log("Woa instantiated");
+        console.log("Woa instantiated - yes");
     };
 
     dataFilePath(fileName) {
@@ -141,6 +141,67 @@ class Woa {
           })
     }
 
+    startCountdown() {
+        console.log("Starting countdown");
+        var intervalId = setInterval(updateCountdown, 1000);
+        let targetDate = new Date("2025-12-03T00:00:00Z");
+        if (targetDate < new Date()) {
+            daysContainer.innerHTML = "The countdown has ended!";
+            clearInterval(intervalId);
+            return;
+        }
+        function updateCountdown() {
+            let now = new Date();
+            let timeDiff = targetDate - now;
+            if (timeDiff <= 0) {
+                daysContainer.innerHTML = "The countdown has ended!";
+                clearInterval(intervalId);
+                return;
+            }
+            let days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            let countdownNumber = document.querySelector('.countdown-number');
+            countdownNumber && (countdownNumber.innerHTML = days);
+        }
+    }
+
+    startClock() {
+        console.log("Starting clock");
+        var intervalId = setInterval(updateClock, 1000);
+        function updateClock() {
+            let now = new Date();
+            let day = now.getDate();
+            let hours = now.getHours();
+            if (hours < 10) {
+                hours = `0${hours}`;
+            }
+            let minutes = now.getMinutes();
+            if (minutes < 10) {
+                minutes = `0${minutes}`;
+            }
+            let seconds = now.getSeconds();
+            if (seconds < 10) {
+                seconds = `0${seconds}`;
+            }
+            let year = now.getFullYear();
+            let month = now.getMonth() + 1;
+            if (month < 10) {
+                month = `0${month}`;
+            }
+            let yearElement = document.querySelector('#digital-clock-year');
+            let monthElement = document.querySelector('#digital-clock-month');
+            let dayElement = document.querySelector('#digital-clock-day');
+            let hoursElement = document.querySelector('#digital-clock-hours');
+            let minutesElement = document.querySelector('#digital-clock-minutes');
+            let secondsElement = document.querySelector('#digital-clock-seconds');
+            yearElement && (yearElement.innerHTML = year);
+            monthElement && (monthElement.innerHTML = month);
+            dayElement && (dayElement.innerHTML = day);
+            hoursElement && (hoursElement.innerHTML = hours);
+            minutesElement && (minutesElement.innerHTML = minutes);
+            secondsElement && (secondsElement.innerHTML = seconds);
+        }
+    }
+
     renderBandTable(target) {
         function renderBandRow(rowData) {
             let bandRow = document.createElement("div");
@@ -201,5 +262,8 @@ document.addEventListener("DOMContentLoaded", () => {
     woa_functions.renderComponent('.footer-container', 'footer');
     woa_functions.renderComponent('#about-woa', 'about-woa');
     woa_functions.renderComponent('#morphing', 'morphing');
-
+    woa_functions.renderComponent('#countdown', 'countdown');
+    woa_functions.renderComponent('#clock', 'clock');
+    woa_functions.startCountdown();
+    woa_functions.startClock();
 })
