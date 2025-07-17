@@ -481,38 +481,18 @@ tr {
     }
     #digital-clock-day {
         font-size: 20px;
-        border-right: solid 1px var(--primary-color);
-        @media (prefers-color-scheme: dark) {
-            border-right-color: var(--primary-color-dark-mode);
-        }
     }
     #digital-clock-month {
         font-size: 20px;
-        border-right: solid 1px var(--primary-color);
-        @media (prefers-color-scheme: dark) {
-            border-right-color: var(--primary-color-dark-mode);
-        }
     }
     #digital-clock-year {
         font-size: 20px;
-        border-right: solid 1px var(--primary-color);
-        @media (prefers-color-scheme: dark) {
-            border-right-color: var(--primary-color-dark-mode);
-        }
     }
     #digital-clock-hours {
         font-size: 20px;
-        border-right: solid 1px var(--primary-color);
-        @media (prefers-color-scheme: dark) {
-            border-right-color: var(--primary-color-dark-mode);
-        }
     }
     #digital-clock-minutes {
         font-size: 20px;
-        border-right: solid 1px var(--primary-color);
-        @media (prefers-color-scheme: dark) {
-            border-right-color: var(--primary-color-dark-mode);
-        }
     }
     #digital-clock-seconds {
         font-size: 20px;
