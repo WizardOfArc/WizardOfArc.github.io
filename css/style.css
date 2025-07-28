@@ -464,7 +464,7 @@ tr {
     background-color: var(--string6-color);
 }
 
-#countdown_display {
+.countdown {
     text-align: center;
     margin: auto;
     width: 100%;
