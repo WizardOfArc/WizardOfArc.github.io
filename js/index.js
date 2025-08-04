@@ -147,6 +147,7 @@ class Woa {
     console.log("Starting countdown");
     var intervalId = setInterval(updateCountdown, 1000);
     let targetDate = new Date("2025-12-03T00:00:00Z");
+    let moLaDeireanach = new Date("2025-11-21T00:00:00Z");
     if (targetDate < new Date()) {
       daysContainer.innerHTML = "The countdown has ended!";
       clearInterval(intervalId);
@@ -155,17 +156,22 @@ class Woa {
     function updateCountdown() {
       let now = new Date();
       let timeDiff = targetDate - now;
+      let idirLaDeireanach = moLaDeireanach - now;
       if (timeDiff <= 0) {
         daysContainer.innerHTML = "The countdown has ended!";
         clearInterval(intervalId);
         return;
       }
-      let days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      let millisInADay = 1000 * 60 * 60 * 24;
+      let days = Math.floor(timeDiff / millisInADay);
+      let laGoDeireadh = Math.floor(idirLaDeireanach / millisInADay);
+      let obairCountDown = document.querySelector(".obair-countdown-number");
       let countdownNumber = document.querySelector(".countdown-number");
       /*
             let note = `Tá ${days} lá fágtha go dtí go bhfillfidh Azí ar Bhaile Átha Cliath`;
             */
       countdownNumber && (countdownNumber.innerHTML = days);
+      obairCountDown & (obairCountDown.innerHTML = laGoDeireadh);
     }
   }
 
@@ -272,3 +278,38 @@ document.addEventListener("DOMContentLoaded", () => {
   woa_functions.startCountdown();
   woa_functions.startClock();
 });
+
+/**
+ * mapping:
+ *
+ * space = &#x1680;
+ *
+ * b = &#x1681;
+ * l = &#x1682;
+ * f = &#x1683;
+ * s = &#x1684;
+ * n = &#x1685;
+ *
+ * h = &#x1686;
+ * d = &#x1687;
+ * t = &#x1688;
+ * c (caol) = &#x1689;
+ * q (c lathan) = &#x168a;
+ *
+ * m = &#x168b;
+ * g (caol) = &#x168c;
+ * g (lathan) = &#x168d;
+ * x (st, tr, sw) = &#x168e;
+ * r = &#x168f;
+ *
+ * a = &#x1690;
+ * o = &#x1691;
+ * u = &#x1692;
+ * e = &#x1693;
+ * i = &#x1694;
+ *
+ * p = &#169a;
+ * >- = &#x169b;
+ * -< = &#x169c;
+
+ */
