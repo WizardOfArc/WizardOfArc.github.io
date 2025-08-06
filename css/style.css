@@ -468,12 +468,20 @@ tr {
     text-align: center;
     margin: auto;
     width: 100%;
+    color: var(--primary-color);
+    @media (prefers-color-scheme: dark) {
+        color: var(--primary-color-dark-mode);
+    }
 }
 
 #digital-clock {
     width: 300px;
     margin: auto;
     margin-top: 20%;
+    color: var(--primary-color);
+    @media (prefers-color-scheme: dark) {
+        color: var(--primary-color-dark-mode);
+    }
     #digital-clock-face {
         display: flex;
         justify-content: center;
