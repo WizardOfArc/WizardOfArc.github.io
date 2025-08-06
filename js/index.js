@@ -146,8 +146,8 @@ class Woa {
   startCountdown() {
     console.log("Starting countdown");
     var intervalId = setInterval(updateCountdown, 1000);
-    let targetDate = new Date("2025-12-03T00:00:00Z");
-    let moLaDeireanach = new Date("2025-11-21T00:00:00Z");
+    let targetDate = new Date("2025-12-03T16:00:00Z");
+    let moLaDeireanach = new Date("2025-11-22T13:00:00Z");
     if (targetDate < new Date()) {
       daysContainer.innerHTML = "The countdown has ended!";
       clearInterval(intervalId);
