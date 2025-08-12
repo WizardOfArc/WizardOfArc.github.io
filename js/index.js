@@ -272,6 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   woa_functions.renderComponent(".footer-container", "footer");
   woa_functions.renderComponent("#about-woa", "about-woa");
+  woa_functions.renderComponent("#azi", "azi");
   woa_functions.renderComponent("#morphing", "morphing");
   woa_functions.renderComponent("#countdown", "countdown");
   woa_functions.renderComponent("#clock", "clock");

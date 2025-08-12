@@ -83,6 +83,12 @@ a {
     margin: auto;
 }
 
+.responsive-half-image {
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+
 .music-link-thumbnail {
     width: 45px;
 }
@@ -243,6 +249,11 @@ a {
         margin: auto;
     }
 
+    .responsive-half-image {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
     .footer-container {
         .footer {
             width: 100%;
