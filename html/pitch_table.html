@@ -1,1451 +1,921 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>Pitch Table</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/images/favicon.ico"
+        />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
         <script src="/js/index.js"></script>
     </head>
     <body>
         <div class="blog-header">
-          <div id="woa_logo" class="header-image"></div>
+            <div id="woa_logo" class="header-image"></div>
             <h1 class="blog-title">Pitch Table</h1>
         </div>
-        
+
         <div class="pitch-table-intro">
             <p>This is to help with Guitar TAB to midi roll conversion</p>
         </div>
 
         <table class="pitch-table-header">
-          <th>MIDI note</th> 
-          <th class="ost str6">OST str6</th> 
-          <th class="ost str5">OST str5</th> 
-          <th class="ost str4">OST str4</th> 
-          <th class="ost str3">OST str3</th> 
-          <th class="ost str2">OST str2</th> 
-          <th class="ost str1">OST str1</th> 
-          <th class="nst str6">NST str6</th> 
-          <th class="nst str5">NST str5</th> 
-          <th class="nst str4">NST str4</th> 
-          <th class="nst str3">NST str3</th> 
-          <th class="nst str2">NST str2</th> 
-          <th class="nst str1">NST str1</th> 
-          <th>Note Name</th>
+            <th>MIDI note</th>
+            <th class="ost str6">String 6</th>
+            <th class="ost str5">String 5</th>
+            <th class="ost str4">String 4</th>
+            <th class="ost str3">String 3</th>
+            <th class="ost str2">String 2</th>
+            <th class="ost str1">String 1</th>
+            <th>Note Name</th>
         </table>
         <!--- middle C is 40th chromatic key -->
         <!--- lowest note is an A -->
         <div class="pitch-rows-container">
-        <table id="pitch-rows">
-          <tr id="pkey88" class="pitch-table-row note-natural">
-            <td class="midi-note">108</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey87" class="pitch-table-row note-natural">
-            <td class="midi-note">107</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey86" class="pitch-table-row note-accidental">
-            <td class="midi-note">106</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey85" class="pitch-table-row note-natural">
-            <td class="midi-note">105</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey84" class="pitch-table-row note-accidental">
-            <td class="midi-note">104</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey83" class="pitch-table-row note-natural">
-            <td class="midi-note">103</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey82" class="pitch-table-row note-accidental">
-            <td class="midi-note">102</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F#/G#</td>
-          </tr>
-          <tr id="pkey81" class="pitch-table-row note-natural">
-            <td class="midi-note">101</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey80" class="pitch-table-row note-natural">
-            <td class="midi-note">100</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey79" class="pitch-table-row note-accidental">
-            <td class="midi-note">99</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey78" class="pitch-table-row note-natural">
-            <td class="midi-note">98</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey77" class="pitch-table-row note-accidental">
-            <td class="midi-note">97</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey76" class="pitch-table-row note-natural">
-            <td class="midi-note">96</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey75" class="pitch-table-row note-natural">
-            <td class="midi-note">95</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey74" class="pitch-table-row note-accidental">
-            <td class="midi-note">94</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey73" class="pitch-table-row note-natural">
-            <td class="midi-note">93</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey72" class="pitch-table-row note-accidental">
-            <td class="midi-note">92</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str1 fret">24</td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey71" class="pitch-table-row note-natural">
-            <td class="midi-note">91</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str1 fret">23</td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey70" class="pitch-table-row note-accidental">
-            <td class="midi-note">90</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str1 fret">22</td> 
-            <td class="note-name">F#/Gb</td>
-          </tr>
-          <tr id="pkey69" class="pitch-table-row note-natural">
-            <td class="midi-note">89</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str1 fret">22</td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey68" class="pitch-table-row note-natural">
-            <td class="midi-note">88</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str1 fret">24</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">24</td> 
-            <td class="nst str1 fret">21</td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey67" class="pitch-table-row note-accidental">
-            <td class="midi-note">87</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str1 fret">23</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">23</td> 
-            <td class="nst str1 fret">20</td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey66" class="pitch-table-row note-natural">
-            <td class="midi-note">86</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str1 fret">22</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">22</td> 
-            <td class="nst str1 fret">19</td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey65" class="pitch-table-row note-accidental">
-            <td class="midi-note">85</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str1 fret">21</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">21</td> 
-            <td class="nst str1 fret">18</td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey64" class="pitch-table-row note-natural">
-            <td class="midi-note">84</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str1 fret">20</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">20</td> 
-            <td class="nst str1 fret">17</td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey63" class="pitch-table-row note-natural">
-            <td class="midi-note">83</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str2 fret">24</td> 
-            <td class="ost str1 fret">19</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">19</td> 
-            <td class="nst str1 fret">16</td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey62" class="pitch-table-row note-accidental">
-            <td class="midi-note">82</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str2 fret">23</td> 
-            <td class="ost str1 fret">18</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str2 fret">18</td> 
-            <td class="nst str1 fret">15</td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey61" class="pitch-table-row note-natural">
-            <td class="midi-note">81</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str2 fret">22</td> 
-            <td class="ost str1 fret">17</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">24</td> 
-            <td class="nst str2 fret">17</td> 
-            <td class="nst str1 fret">14</td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey60" class="pitch-table-row note-accidental">
-            <td class="midi-note">80</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str2 fret">21</td> 
-            <td class="ost str1 fret">16</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">23</td> 
-            <td class="nst str2 fret">16</td> 
-            <td class="nst str1 fret">13</td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey59" class="pitch-table-row note-natural">
-            <td class="midi-note">79</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str3 fret">24</td> 
-            <td class="ost str2 fret">20</td> 
-            <td class="ost str1 fret">15</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">22</td> 
-            <td class="nst str2 fret">15</td> 
-            <td class="nst str1 fret">12</td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey58" class="pitch-table-row note-accidental">
-            <td class="midi-note">78</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str3 fret">23</td> 
-            <td class="ost str2 fret">19</td> 
-            <td class="ost str1 fret">14</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">21</td> 
-            <td class="nst str2 fret">14</td> 
-            <td class="nst str1 fret">11</td> 
-            <td class="note-name">F#/Gb</td>
-          </tr>
-          <tr id="pkey57" class="pitch-table-row note-natural">
-            <td class="midi-note">77</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str3 fret">22</td> 
-            <td class="ost str2 fret">18</td> 
-            <td class="ost str1 fret">13</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">20</td> 
-            <td class="nst str2 fret">13</td> 
-            <td class="nst str1 fret">10</td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey56" class="pitch-table-row note-natural">
-            <td class="midi-note">76</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str3 fret">21</td> 
-            <td class="ost str2 fret">17</td> 
-            <td class="ost str1 fret">12</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">19</td> 
-            <td class="nst str2 fret">12</td> 
-            <td class="nst str1 fret">09</td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey55" class="pitch-table-row note-accidental">
-            <td class="midi-note">75</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str3 fret">20</td> 
-            <td class="ost str2 fret">16</td> 
-            <td class="ost str1 fret">11</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str3 fret">18</td> 
-            <td class="nst str2 fret">11</td> 
-            <td class="nst str1 fret">08</td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey54" class="pitch-table-row note-natural">
-            <td class="midi-note">74</td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str4 fret">24</td> 
-            <td class="ost str3 fret">19</td> 
-            <td class="ost str2 fret">15</td> 
-            <td class="ost str1 fret">10</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">24</td> 
-            <td class="nst str3 fret">17</td> 
-            <td class="nst str2 fret">10</td> 
-            <td class="nst str1 fret">07</td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey53" class="pitch-table-row note-accidental">
-            <td class="midi-note">73</td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str4 fret">23</td> 
-            <td class="ost str3 fret">18</td> 
-            <td class="ost str2 fret">14</td> 
-            <td class="ost str1 fret">09</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">23</td> 
-            <td class="nst str3 fret">16</td> 
-            <td class="nst str2 fret">09</td> 
-            <td class="nst str1 fret">06</td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey52" class="pitch-table-row note-natural">
-            <td class="midi-note">72</td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str4 fret">22</td> 
-            <td class="ost str3 fret">17</td> 
-            <td class="ost str2 fret">13</td> 
-            <td class="ost str1 fret">08</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">22</td> 
-            <td class="nst str3 fret">15</td> 
-            <td class="nst str2 fret">08</td> 
-            <td class="nst str1 fret">05</td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey51" class="pitch-table-row note-natural">
-            <td class="midi-note">71</td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str4 fret">21</td> 
-            <td class="ost str3 fret">16</td> 
-            <td class="ost str2 fret">12</td> 
-            <td class="ost str1 fret">07</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">21</td> 
-            <td class="nst str3 fret">14</td> 
-            <td class="nst str2 fret">07</td> 
-            <td class="nst str1 fret">04</td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey50" class="pitch-table-row note-accidental">
-            <td class="midi-note">70</td> 
-            <td></td> 
-            <td></td> 
-            <td class="ost str4 fret">20</td> 
-            <td class="ost str3 fret">15</td> 
-            <td class="ost str2 fret">11</td> 
-            <td class="ost str1 fret">06</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">20</td> 
-            <td class="nst str3 fret">13</td> 
-            <td class="nst str2 fret">06</td> 
-            <td class="nst str1 fret">03</td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey49" class="pitch-table-row note-natural">
-            <td class="midi-note">69</td> 
-            <td></td> 
-            <td class="ost str5 fret">24</td> 
-            <td class="ost str4 fret">19</td> 
-            <td class="ost str3 fret">14</td> 
-            <td class="ost str2 fret">10</td> 
-            <td class="ost str1 fret">05</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">19</td> 
-            <td class="nst str3 fret">12</td> 
-            <td class="nst str2 fret">05</td> 
-            <td class="nst str1 fret">02</td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey48" class="pitch-table-row note-accidental">
-            <td class="midi-note">68</td> 
-            <td></td> 
-            <td class="ost str5 fret">23</td> 
-            <td class="ost str4 fret">18</td> 
-            <td class="ost str3 fret">13</td> 
-            <td class="ost str2 fret">09</td> 
-            <td class="ost str1 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str4 fret">18</td> 
-            <td class="nst str3 fret">11</td> 
-            <td class="nst str2 fret">04</td> 
-            <td class="nst str1 fret">01</td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey47" class="pitch-table-row note-natural">
-            <td class="midi-note">67</td> 
-            <td></td> 
-            <td class="ost str5 fret">22</td> 
-            <td class="ost str4 fret">17</td> 
-            <td class="ost str3 fret">12</td> 
-            <td class="ost str2 fret">08</td> 
-            <td class="ost str1 fret">03</td> 
-            <td></td> 
-            <td class="nst str5 fret">24</td> 
-            <td class="nst str4 fret">17</td> 
-            <td class="nst str3 fret">10</td> 
-            <td class="nst str2 fret">03</td> 
-            <td class="nst str1 fret">00</td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey46" class="pitch-table-row note-accidental">
-            <td class="midi-note">66</td> 
-            <td></td> 
-            <td class="ost str5 fret">21</td> 
-            <td class="ost str4 fret">16</td> 
-            <td class="ost str3 fret">11</td> 
-            <td class="ost str2 fret">07</td> 
-            <td class="ost str1 fret">02</td> 
-            <td></td> 
-            <td class="nst str5 fret">23</td> 
-            <td class="nst str4 fret">16</td> 
-            <td class="nst str3 fret">09</td> 
-            <td class="nst str2 fret">02</td> 
-            <td></td> 
-            <td class="note-name">F#/Gb</td>
-          </tr>
-          <tr id="pkey45" class="pitch-table-row note-natural">
-            <td class="midi-note">65</td> 
-            <td></td> 
-            <td class="ost str5 fret">20</td> 
-            <td class="ost str4 fret">15</td> 
-            <td class="ost str3 fret">10</td> 
-            <td class="ost str2 fret">06</td> 
-            <td class="ost str1 fret">01</td> 
-            <td></td> 
-            <td class="nst str5 fret">22</td> 
-            <td class="nst str4 fret">15</td> 
-            <td class="nst str3 fret">08</td> 
-            <td class="nst str2 fret">01</td> 
-            <td></td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey44" class="pitch-table-row note-natural">
-            <td class="midi-note">64</td> 
-            <td class="ost str6 fret">24</td> 
-            <td class="ost str5 fret">19</td> 
-            <td class="ost str4 fret">14</td> 
-            <td class="ost str3 fret">09</td> 
-            <td class="ost str2 fret">05</td> 
-            <td class="ost str1 fret">00</td> 
-            <td></td> 
-            <td class="nst str5 fret">21</td> 
-            <td class="nst str4 fret">14</td> 
-            <td class="nst str3 fret">07</td> 
-            <td class="nst str2 fret">00</td> 
-            <td></td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey43" class="pitch-table-row note-accidental">
-            <td class="midi-note">63</td> 
-            <td class="ost str6 fret">23</td> 
-            <td class="ost str5 fret">18</td> 
-            <td class="ost str4 fret">13</td> 
-            <td class="ost str3 fret">08</td> 
-            <td class="ost str2 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str5 fret">20</td> 
-            <td class="nst str4 fret">13</td> 
-            <td class="nst str3 fret">06</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey42" class="pitch-table-row note-natural">
-            <td class="midi-note">62</td> 
-            <td class="ost str6 fret">22</td> 
-            <td class="ost str5 fret">17</td> 
-            <td class="ost str4 fret">12</td> 
-            <td class="ost str3 fret">07</td> 
-            <td class="ost str2 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str5 fret">19</td> 
-            <td class="nst str4 fret">12</td> 
-            <td class="nst str3 fret">05</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey41" class="pitch-table-row note-accidental">
-            <td class="midi-note">61</td> 
-            <td class="ost str6 fret">21</td> 
-            <td class="ost str5 fret">16</td> 
-            <td class="ost str4 fret">11</td> 
-            <td class="ost str3 fret">06</td> 
-            <td class="ost str2 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str5 fret">18</td> 
-            <td class="nst str4 fret">11</td> 
-            <td class="nst str3 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey40" class="pitch-table-row note-natural middle-c">
-            <td class="midi-note">60</td> 
-            <td class="ost str6 fret">20</td> 
-            <td class="ost str5 fret">15</td> 
-            <td class="ost str4 fret">10</td> 
-            <td class="ost str3 fret">05</td> 
-            <td class="ost str2 fret">01</td> 
-            <td></td> 
-            <td class="nst str6 fret">24</td> 
-            <td class="nst str5 fret">17</td> 
-            <td class="nst str4 fret">10</td> 
-            <td class="nst str3 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C (mid) </td>
-          </tr>
-          <tr id="pkey39" class="pitch-table-row note-natural">
-            <td class="midi-note">59</td> 
-            <td class="ost str6 fret">19</td> 
-            <td class="ost str5 fret">14</td> 
-            <td class="ost str4 fret">09</td> 
-            <td class="ost str3 fret">04</td> 
-            <td class="ost str2 fret">00</td> 
-            <td></td> 
-            <td class="nst str6 fret">23</td> 
-            <td class="nst str5 fret">16</td> 
-            <td class="nst str4 fret">09</td> 
-            <td class="nst str3 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey38" class="pitch-table-row note-accidental">
-            <td class="midi-note">58</td> 
-            <td class="ost str6 fret">18</td> 
-            <td class="ost str5 fret">13</td> 
-            <td class="ost str4 fret">08</td> 
-            <td class="ost str3 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">22</td> 
-            <td class="nst str5 fret">15</td> 
-            <td class="nst str4 fret">08</td> 
-            <td class="nst str3 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey37" class="pitch-table-row note-natural">
-            <td class="midi-note">57</td> 
-            <td class="ost str6 fret">17</td> 
-            <td class="ost str5 fret">12</td> 
-            <td class="ost str4 fret">07</td> 
-            <td class="ost str3 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">21</td> 
-            <td class="nst str5 fret">14</td> 
-            <td class="nst str4 fret">07</td> 
-            <td class="nst str3 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey36" class="pitch-table-row note-accidental">
-            <td class="midi-note">56</td> 
-            <td class="ost str6 fret">16</td> 
-            <td class="ost str5 fret">11</td> 
-            <td class="ost str4 fret">06</td> 
-            <td class="ost str3 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">20</td> 
-            <td class="nst str5 fret">13</td> 
-            <td class="nst str4 fret">06</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey35" class="pitch-table-row note-natural">
-            <td class="midi-note">55</td> 
-            <td class="ost str6 fret">15</td> 
-            <td class="ost str5 fret">10</td> 
-            <td class="ost str4 fret">05</td> 
-            <td class="ost str3 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">19</td> 
-            <td class="nst str5 fret">12</td> 
-            <td class="nst str4 fret">05</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey34" class="pitch-table-row note-accidental">
-            <td class="midi-note">54</td> 
-            <td class="ost str6 fret">14</td> 
-            <td class="ost str5 fret">09</td> 
-            <td class="ost str4 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">18</td> 
-            <td class="nst str5 fret">11</td> 
-            <td class="nst str4 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F#/Gb</td>
-          </tr>
-          <tr id="pkey33" class="pitch-table-row note-natural">
-            <td class="midi-note">53</td> 
-            <td class="ost str6 fret">13</td> 
-            <td class="ost str5 fret">08</td> 
-            <td class="ost str4 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">17</td> 
-            <td class="nst str5 fret">10</td> 
-            <td class="nst str4 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey32" class="pitch-table-row note-natural">
-            <td class="midi-note">52</td> 
-            <td class="ost str6 fret">12</td> 
-            <td class="ost str5 fret">07</td> 
-            <td class="ost str4 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">16</td> 
-            <td class="nst str5 fret">09</td> 
-            <td class="nst str4 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey31" class="pitch-table-row note-accidental">
-            <td class="midi-note">51</td> 
-            <td class="ost str6 fret">11</td> 
-            <td class="ost str5 fret">06</td> 
-            <td class="ost str4 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">15</td> 
-            <td class="nst str5 fret">08</td> 
-            <td class="nst str4 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey30" class="pitch-table-row note-natural">
-            <td class="midi-note">50</td> 
-            <td class="ost str6 fret">10</td> 
-            <td class="ost str5 fret">05</td> 
-            <td class="ost str4 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">14</td> 
-            <td class="nst str5 fret">07</td> 
-            <td class="nst str4 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey29" class="pitch-table-row note-accidental">
-            <td class="midi-note">49</td> 
-            <td class="ost str6 fret">09</td> 
-            <td class="ost str5 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">13</td> 
-            <td class="nst str5 fret">06</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey28" class="pitch-table-row note-natural">
-            <td class="midi-note">48</td> 
-            <td class="ost str6 fret">08</td> 
-            <td class="ost str5 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">12</td> 
-            <td class="nst str5 fret">05</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey27" class="pitch-table-row note-natural">
-            <td class="midi-note">47</td> 
-            <td class="ost str6 fret">07</td> 
-            <td class="ost str5 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">11</td> 
-            <td class="nst str5 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey26" class="pitch-table-row note-accidental">
-            <td class="midi-note">46</td> 
-            <td class="ost str6 fret">06</td> 
-            <td class="ost str5 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">10</td> 
-            <td class="nst str5 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey25" class="pitch-table-row note-natural">
-            <td class="midi-note">45</td> 
-            <td class="ost str6 fret">05</td> 
-            <td class="ost str5 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">09</td> 
-            <td class="nst str5 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey24" class="pitch-table-row note-accidental">
-            <td class="midi-note">44</td> 
-            <td class="ost str6 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">08</td> 
-            <td class="nst str5 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey23" class="pitch-table-row note-natural">
-            <td class="midi-note">43</td> 
-            <td class="ost str6 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">07</td> 
-            <td class="nst str5 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey22" class="pitch-table-row note-accidental">
-            <td class="midi-note">42</td> 
-            <td class="ost str6 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">06</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F#/Gb</td>
-          </tr>
-          <tr id="pkey21" class="pitch-table-row note-natural">
-            <td class="midi-note">41</td> 
-            <td class="ost str6 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">05</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey20" class="pitch-table-row note-natural">
-            <td class="midi-note">40</td> 
-            <td class="ost str6 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">04</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey19" class="pitch-table-row note-accidental">
-            <td class="midi-note">39</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">03</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey18" class="pitch-table-row note-natural">
-            <td class="midi-note">38</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">02</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey17" class="pitch-table-row note-accidental">
-            <td class="midi-note">37</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">01</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey16" class="pitch-table-row note-natural">
-            <td class="midi-note">36</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="nst str6 fret">00</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey15" class="pitch-table-row note-natural">
-            <td class="midi-note">35</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey14" class="pitch-table-row note-accidental">
-            <td class="midi-note">34</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey13" class="pitch-table-row note-natural">
-            <td class="midi-note">33</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A</td>
-          </tr>
-          <tr id="pkey12" class="pitch-table-row note-accidental">
-            <td class="midi-note">32</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G#/Ab</td>
-          </tr>
-          <tr id="pkey11" class="pitch-table-row note-natural">
-            <td class="midi-note">31</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">G</td>
-          </tr>
-          <tr id="pkey10" class="pitch-table-row note-accidental">
-            <td class="midi-note">30</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F#/Gb</td>
-          </tr>
-          <tr id="pkey09" class="pitch-table-row note-natural">
-            <td class="midi-note">29</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">F</td>
-          </tr>
-          <tr id="pkey08" class="pitch-table-row note-natural">
-            <td class="midi-note">28</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">E</td>
-          </tr>
-          <tr id="pkey07" class="pitch-table-row note-accidental">
-            <td class="midi-note">27</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D#/Eb</td>
-          </tr>
-          <tr id="pkey06" class="pitch-table-row note-natural">
-            <td class="midi-note">26</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">D</td>
-          </tr>
-          <tr id="pkey05" class="pitch-table-row note-accidental">
-            <td class="midi-note">25</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C#/Db</td>
-          </tr>
-          <tr id="pkey04" class="pitch-table-row note-natural">
-            <td class="midi-note">24</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">C</td>
-          </tr>
-          <tr id="pkey03" class="pitch-table-row note-natural">
-            <td class="midi-note">23</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">B</td>
-          </tr>
-          <tr id="pkey02" class="pitch-table-row note-accidental">
-            <td class="midi-note">22</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A#/Bb</td>
-          </tr>
-          <tr id="pkey01" class="pitch-table-row note-natural">
-            <td class="midi-note">21</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td class="note-name">A</td>
-          </tr>
-        </table>
+            <table id="pitch-rows">
+                <tr id="pkey88" class="pitch-table-row note-natural">
+                    <td class="midi-note">108</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey87" class="pitch-table-row note-natural">
+                    <td class="midi-note">107</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey86" class="pitch-table-row note-accidental">
+                    <td class="midi-note">106</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey85" class="pitch-table-row note-natural">
+                    <td class="midi-note">105</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey84" class="pitch-table-row note-accidental">
+                    <td class="midi-note">104</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey83" class="pitch-table-row note-natural">
+                    <td class="midi-note">103</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey82" class="pitch-table-row note-accidental">
+                    <td class="midi-note">102</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F#/G#</td>
+                </tr>
+                <tr id="pkey81" class="pitch-table-row note-natural">
+                    <td class="midi-note">101</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey80" class="pitch-table-row note-natural">
+                    <td class="midi-note">100</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey79" class="pitch-table-row note-accidental">
+                    <td class="midi-note">99</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey78" class="pitch-table-row note-natural">
+                    <td class="midi-note">98</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey77" class="pitch-table-row note-accidental">
+                    <td class="midi-note">97</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey76" class="pitch-table-row note-natural">
+                    <td class="midi-note">96</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey75" class="pitch-table-row note-natural">
+                    <td class="midi-note">95</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey74" class="pitch-table-row note-accidental">
+                    <td class="midi-note">94</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey73" class="pitch-table-row note-natural">
+                    <td class="midi-note">93</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey72" class="pitch-table-row note-accidental">
+                    <td class="midi-note">92</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey71" class="pitch-table-row note-natural">
+                    <td class="midi-note">91</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey70" class="pitch-table-row note-accidental">
+                    <td class="midi-note">90</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F#/Gb</td>
+                </tr>
+                <tr id="pkey69" class="pitch-table-row note-natural">
+                    <td class="midi-note">89</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey68" class="pitch-table-row note-natural">
+                    <td class="midi-note">88</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str1 fret">24</td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey67" class="pitch-table-row note-accidental">
+                    <td class="midi-note">87</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str1 fret">23</td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey66" class="pitch-table-row note-natural">
+                    <td class="midi-note">86</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str1 fret">22</td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey65" class="pitch-table-row note-accidental">
+                    <td class="midi-note">85</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str1 fret">21</td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey64" class="pitch-table-row note-natural">
+                    <td class="midi-note">84</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str1 fret">20</td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey63" class="pitch-table-row note-natural">
+                    <td class="midi-note">83</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str2 fret">24</td>
+                    <td class="ost str1 fret">19</td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey62" class="pitch-table-row note-accidental">
+                    <td class="midi-note">82</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str2 fret">23</td>
+                    <td class="ost str1 fret">18</td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey61" class="pitch-table-row note-natural">
+                    <td class="midi-note">81</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str2 fret">22</td>
+                    <td class="ost str1 fret">17</td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey60" class="pitch-table-row note-accidental">
+                    <td class="midi-note">80</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str2 fret">21</td>
+                    <td class="ost str1 fret">16</td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey59" class="pitch-table-row note-natural">
+                    <td class="midi-note">79</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str3 fret">24</td>
+                    <td class="ost str2 fret">20</td>
+                    <td class="ost str1 fret">15</td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey58" class="pitch-table-row note-accidental">
+                    <td class="midi-note">78</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str3 fret">23</td>
+                    <td class="ost str2 fret">19</td>
+                    <td class="ost str1 fret">14</td>
+                    <td class="note-name">F#/Gb</td>
+                </tr>
+                <tr id="pkey57" class="pitch-table-row note-natural">
+                    <td class="midi-note">77</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str3 fret">22</td>
+                    <td class="ost str2 fret">18</td>
+                    <td class="ost str1 fret">13</td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey56" class="pitch-table-row note-natural">
+                    <td class="midi-note">76</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str3 fret">21</td>
+                    <td class="ost str2 fret">17</td>
+                    <td class="ost str1 fret">12</td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey55" class="pitch-table-row note-accidental">
+                    <td class="midi-note">75</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str3 fret">20</td>
+                    <td class="ost str2 fret">16</td>
+                    <td class="ost str1 fret">11</td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey54" class="pitch-table-row note-natural">
+                    <td class="midi-note">74</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str4 fret">24</td>
+                    <td class="ost str3 fret">19</td>
+                    <td class="ost str2 fret">15</td>
+                    <td class="ost str1 fret">10</td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey53" class="pitch-table-row note-accidental">
+                    <td class="midi-note">73</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str4 fret">23</td>
+                    <td class="ost str3 fret">18</td>
+                    <td class="ost str2 fret">14</td>
+                    <td class="ost str1 fret">09</td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey52" class="pitch-table-row note-natural">
+                    <td class="midi-note">72</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str4 fret">22</td>
+                    <td class="ost str3 fret">17</td>
+                    <td class="ost str2 fret">13</td>
+                    <td class="ost str1 fret">08</td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey51" class="pitch-table-row note-natural">
+                    <td class="midi-note">71</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str4 fret">21</td>
+                    <td class="ost str3 fret">16</td>
+                    <td class="ost str2 fret">12</td>
+                    <td class="ost str1 fret">07</td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey50" class="pitch-table-row note-accidental">
+                    <td class="midi-note">70</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ost str4 fret">20</td>
+                    <td class="ost str3 fret">15</td>
+                    <td class="ost str2 fret">11</td>
+                    <td class="ost str1 fret">06</td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey49" class="pitch-table-row note-natural">
+                    <td class="midi-note">69</td>
+                    <td></td>
+                    <td class="ost str5 fret">24</td>
+                    <td class="ost str4 fret">19</td>
+                    <td class="ost str3 fret">14</td>
+                    <td class="ost str2 fret">10</td>
+                    <td class="ost str1 fret">05</td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey48" class="pitch-table-row note-accidental">
+                    <td class="midi-note">68</td>
+                    <td></td>
+                    <td class="ost str5 fret">23</td>
+                    <td class="ost str4 fret">18</td>
+                    <td class="ost str3 fret">13</td>
+                    <td class="ost str2 fret">09</td>
+                    <td class="ost str1 fret">04</td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey47" class="pitch-table-row note-natural">
+                    <td class="midi-note">67</td>
+                    <td></td>
+                    <td class="ost str5 fret">22</td>
+                    <td class="ost str4 fret">17</td>
+                    <td class="ost str3 fret">12</td>
+                    <td class="ost str2 fret">08</td>
+                    <td class="ost str1 fret">03</td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey46" class="pitch-table-row note-accidental">
+                    <td class="midi-note">66</td>
+                    <td></td>
+                    <td class="ost str5 fret">21</td>
+                    <td class="ost str4 fret">16</td>
+                    <td class="ost str3 fret">11</td>
+                    <td class="ost str2 fret">07</td>
+                    <td class="ost str1 fret">02</td>
+                    <td class="note-name">F#/Gb</td>
+                </tr>
+                <tr id="pkey45" class="pitch-table-row note-natural">
+                    <td class="midi-note">65</td>
+                    <td></td>
+                    <td class="ost str5 fret">20</td>
+                    <td class="ost str4 fret">15</td>
+                    <td class="ost str3 fret">10</td>
+                    <td class="ost str2 fret">06</td>
+                    <td class="ost str1 fret">01</td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey44" class="pitch-table-row note-natural">
+                    <td class="midi-note">64</td>
+                    <td class="ost str6 fret">24</td>
+                    <td class="ost str5 fret">19</td>
+                    <td class="ost str4 fret">14</td>
+                    <td class="ost str3 fret">09</td>
+                    <td class="ost str2 fret">05</td>
+                    <td class="ost str1 fret">00</td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey43" class="pitch-table-row note-accidental">
+                    <td class="midi-note">63</td>
+                    <td class="ost str6 fret">23</td>
+                    <td class="ost str5 fret">18</td>
+                    <td class="ost str4 fret">13</td>
+                    <td class="ost str3 fret">08</td>
+                    <td class="ost str2 fret">04</td>
+                    <td></td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey42" class="pitch-table-row note-natural">
+                    <td class="midi-note">62</td>
+                    <td class="ost str6 fret">22</td>
+                    <td class="ost str5 fret">17</td>
+                    <td class="ost str4 fret">12</td>
+                    <td class="ost str3 fret">07</td>
+                    <td class="ost str2 fret">03</td>
+                    <td></td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey41" class="pitch-table-row note-accidental">
+                    <td class="midi-note">61</td>
+                    <td class="ost str6 fret">21</td>
+                    <td class="ost str5 fret">16</td>
+                    <td class="ost str4 fret">11</td>
+                    <td class="ost str3 fret">06</td>
+                    <td class="ost str2 fret">02</td>
+                    <td></td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey40" class="pitch-table-row note-natural middle-c">
+                    <td class="midi-note">60</td>
+                    <td class="ost str6 fret">20</td>
+                    <td class="ost str5 fret">15</td>
+                    <td class="ost str4 fret">10</td>
+                    <td class="ost str3 fret">05</td>
+                    <td class="ost str2 fret">01</td>
+                    <td></td>
+                    <td class="note-name">C (mid)</td>
+                </tr>
+                <tr id="pkey39" class="pitch-table-row note-natural">
+                    <td class="midi-note">59</td>
+                    <td class="ost str6 fret">19</td>
+                    <td class="ost str5 fret">14</td>
+                    <td class="ost str4 fret">09</td>
+                    <td class="ost str3 fret">04</td>
+                    <td class="ost str2 fret">00</td>
+                    <td></td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey38" class="pitch-table-row note-accidental">
+                    <td class="midi-note">58</td>
+                    <td class="ost str6 fret">18</td>
+                    <td class="ost str5 fret">13</td>
+                    <td class="ost str4 fret">08</td>
+                    <td class="ost str3 fret">03</td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey37" class="pitch-table-row note-natural">
+                    <td class="midi-note">57</td>
+                    <td class="ost str6 fret">17</td>
+                    <td class="ost str5 fret">12</td>
+                    <td class="ost str4 fret">07</td>
+                    <td class="ost str3 fret">02</td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey36" class="pitch-table-row note-accidental">
+                    <td class="midi-note">56</td>
+                    <td class="ost str6 fret">16</td>
+                    <td class="ost str5 fret">11</td>
+                    <td class="ost str4 fret">06</td>
+                    <td class="ost str3 fret">01</td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey35" class="pitch-table-row note-natural">
+                    <td class="midi-note">55</td>
+                    <td class="ost str6 fret">15</td>
+                    <td class="ost str5 fret">10</td>
+                    <td class="ost str4 fret">05</td>
+                    <td class="ost str3 fret">00</td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey34" class="pitch-table-row note-accidental">
+                    <td class="midi-note">54</td>
+                    <td class="ost str6 fret">14</td>
+                    <td class="ost str5 fret">09</td>
+                    <td class="ost str4 fret">04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F#/Gb</td>
+                </tr>
+                <tr id="pkey33" class="pitch-table-row note-natural">
+                    <td class="midi-note">53</td>
+                    <td class="ost str6 fret">13</td>
+                    <td class="ost str5 fret">08</td>
+                    <td class="ost str4 fret">03</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey32" class="pitch-table-row note-natural">
+                    <td class="midi-note">52</td>
+                    <td class="ost str6 fret">12</td>
+                    <td class="ost str5 fret">07</td>
+                    <td class="ost str4 fret">02</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey31" class="pitch-table-row note-accidental">
+                    <td class="midi-note">51</td>
+                    <td class="ost str6 fret">11</td>
+                    <td class="ost str5 fret">06</td>
+                    <td class="ost str4 fret">01</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey30" class="pitch-table-row note-natural">
+                    <td class="midi-note">50</td>
+                    <td class="ost str6 fret">10</td>
+                    <td class="ost str5 fret">05</td>
+                    <td class="ost str4 fret">00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey29" class="pitch-table-row note-accidental">
+                    <td class="midi-note">49</td>
+                    <td class="ost str6 fret">09</td>
+                    <td class="ost str5 fret">04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey28" class="pitch-table-row note-natural">
+                    <td class="midi-note">48</td>
+                    <td class="ost str6 fret">08</td>
+                    <td class="ost str5 fret">03</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey27" class="pitch-table-row note-natural">
+                    <td class="midi-note">47</td>
+                    <td class="ost str6 fret">07</td>
+                    <td class="ost str5 fret">02</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey26" class="pitch-table-row note-accidental">
+                    <td class="midi-note">46</td>
+                    <td class="ost str6 fret">06</td>
+                    <td class="ost str5 fret">01</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey25" class="pitch-table-row note-natural">
+                    <td class="midi-note">45</td>
+                    <td class="ost str6 fret">05</td>
+                    <td class="ost str5 fret">00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey24" class="pitch-table-row note-accidental">
+                    <td class="midi-note">44</td>
+                    <td class="ost str6 fret">04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey23" class="pitch-table-row note-natural">
+                    <td class="midi-note">43</td>
+                    <td class="ost str6 fret">03</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey22" class="pitch-table-row note-accidental">
+                    <td class="midi-note">42</td>
+                    <td class="ost str6 fret">02</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F#/Gb</td>
+                </tr>
+                <tr id="pkey21" class="pitch-table-row note-natural">
+                    <td class="midi-note">41</td>
+                    <td class="ost str6 fret">01</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey20" class="pitch-table-row note-natural">
+                    <td class="midi-note">40</td>
+                    <td class="ost str6 fret">00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey19" class="pitch-table-row note-accidental">
+                    <td class="midi-note">39</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey18" class="pitch-table-row note-natural">
+                    <td class="midi-note">38</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey17" class="pitch-table-row note-accidental">
+                    <td class="midi-note">37</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey16" class="pitch-table-row note-natural">
+                    <td class="midi-note">36</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey15" class="pitch-table-row note-natural">
+                    <td class="midi-note">35</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey14" class="pitch-table-row note-accidental">
+                    <td class="midi-note">34</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey13" class="pitch-table-row note-natural">
+                    <td class="midi-note">33</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A</td>
+                </tr>
+                <tr id="pkey12" class="pitch-table-row note-accidental">
+                    <td class="midi-note">32</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G#/Ab</td>
+                </tr>
+                <tr id="pkey11" class="pitch-table-row note-natural">
+                    <td class="midi-note">31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">G</td>
+                </tr>
+                <tr id="pkey10" class="pitch-table-row note-accidental">
+                    <td class="midi-note">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F#/Gb</td>
+                </tr>
+                <tr id="pkey09" class="pitch-table-row note-natural">
+                    <td class="midi-note">29</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">F</td>
+                </tr>
+                <tr id="pkey08" class="pitch-table-row note-natural">
+                    <td class="midi-note">28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">E</td>
+                </tr>
+                <tr id="pkey07" class="pitch-table-row note-accidental">
+                    <td class="midi-note">27</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D#/Eb</td>
+                </tr>
+                <tr id="pkey06" class="pitch-table-row note-natural">
+                    <td class="midi-note">26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">D</td>
+                </tr>
+                <tr id="pkey05" class="pitch-table-row note-accidental">
+                    <td class="midi-note">25</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C#/Db</td>
+                </tr>
+                <tr id="pkey04" class="pitch-table-row note-natural">
+                    <td class="midi-note">24</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">C</td>
+                </tr>
+                <tr id="pkey03" class="pitch-table-row note-natural">
+                    <td class="midi-note">23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">B</td>
+                </tr>
+                <tr id="pkey02" class="pitch-table-row note-accidental">
+                    <td class="midi-note">22</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A#/Bb</td>
+                </tr>
+                <tr id="pkey01" class="pitch-table-row note-natural">
+                    <td class="midi-note">21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note-name">A</td>
+                </tr>
+            </table>
         </div>
         <div class="footer-container"></div>
     </body>
