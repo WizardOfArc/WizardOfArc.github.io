@@ -1,0 +1,42 @@
+.friend-link {
+    text-decoration: none;
+}
+
+.friend-name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.friend-header {
+    display: flex;
+    align-items: start;
+}
+
+.friend-row {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--bg-color-dark-mode);
+        box-shadow: 0 0 10px var(--primary-color-dark-mode);
+    }
+}
+
+.friend-desc {
+    padding: 10px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    text-align: left;
+    @media (prefers-color-scheme: dark) {
+        color: var(--secondary-color-dark-mode);
+    }
+}
+
+.friend-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+

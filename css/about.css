@@ -1,0 +1,31 @@
+#about-woa {
+    text-align: center;
+    padding: 20px;
+    .about-woa-text {
+        margin: auto;
+        width: 50%;
+    }
+    .about-woa-text-list {
+        text-align: left;
+        width: 30%;
+        margin: auto;
+    }
+}
+
+#the-transformation {
+    text-align: center;
+    padding: 20px;
+}
+
+.responsive-full-image {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.responsive-half-image {
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+

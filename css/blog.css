@@ -1,0 +1,81 @@
+.post-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-title {
+    border-bottom: solid var(--secondary-color) 2px;
+    font-size: 30px;
+    color: var(--primary-color);
+    @media (prefers-color-scheme: dark) {
+        color: var(--primary-color-dark-mode);
+        border-color: var(--secondary-color-dark-mode);
+    }
+}
+
+.header-image {
+    width: 50%;
+    display: block;
+    margin: auto;
+    @media (prefers-color-scheme: dark) {
+        color: var(--primary-color-dark-mode);
+    }
+}
+
+.blog-title {
+    color: var(--secondary-color);
+    @media (prefers-color-scheme: dark) {
+      color: var(--secondary-color-dark-mode);
+    }
+}
+
+.blog-intro {
+    color: var(--secondary-color);
+    width: fit-content;
+    margin: auto;
+    p {
+      width: fit-content;
+    }
+    @media only screen and (max-width: 401px) {
+        width: 100%;
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--secondary-color-dark-mode);
+    }
+}
+
+.posts-container {
+    height: 31vh;
+    overflow: auto;
+}
+
+.blog-post {
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--secondary-color);
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--bg-color-dark-mode);
+        box-shadow: 0 0 10px var(--secondary-color-dark-mode);
+    }
+}
+
+.post-date {
+    font-size: 12px;
+    color: var(--secondary-color);
+    @media (prefers-color-scheme: dark) {
+        color: var(--secondary-color-dark-mode);
+    }
+}
+
+#woa_logo {
+    height: 600px;
+    background-image: url("../images/woa_logo_only.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    @media (prefers-color-scheme: dark) {
+        background-image: url("../images/woa_logo_only_light.svg");
+    }
+}
+

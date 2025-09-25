@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #3f006a;
+    --secondary-color: #0f000a;
+    --primary-color-dark-mode: #c977ff;
+    --secondary-color-dark-mode: #b892be;
+    --bg-color: #efe0fa;
+    --bg-color-dark-mode: #140020;
+    --new-standard-color: #7fff7f;
+    --old-standard-color: #ff7f7f;
+    --string1-color: #7f7f7f;
+    --string2-color: #0f0f00;
+    --string3-color: #7f007f;
+    --string4-color: #003f3f;
+    --string5-color: #3f3f7f;
+    --string6-color: #7f3f0f;
+    --fret-color: #ffffff;
+}

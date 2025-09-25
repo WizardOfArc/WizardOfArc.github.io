@@ -1,0 +1,75 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  @media (prefers-color-scheme: dark) {
+    color: var(--primary-color-dark-mode);
+    background-color: var(--bg-color-dark-mode);
+  }
+}
+
+a {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  text-decoration: none;
+  @media (prefers-color-scheme: dark) {
+    color: var(--primary-color-dark-mode);
+    background-color: var(--bg-color-dark-mode);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+}
+
+p {
+  color: var(--secondary-color);
+    @media(prefers-color-scheme: dark) {
+    color: var(--secondary-color-dark-mode);
+  }
+}
+.footer {
+   ul {
+     padding: 0;
+     display: flex;
+     flex-direction: row;
+     list-style-type: none;
+     gap: 28px;
+     justify-content: center;
+     width: fit-content;
+     margin: auto;
+     @media only screen and (max-width: 768px) {
+       display: block;
+       width: 100%;
+       text-align: center;
+       .footer-link {
+            margin:auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: block;
+            border-bottom: solid var(--primary-color) 1px;
+            @media (prefers-color-scheme: dark) {
+                border-color: var(--primary-color-dark-mode);
+            }
+       }
+     }
+
+    .footer-link {
+      font-weight: bold;
+    }
+   }
+}
+
+
+
+.woa-home-button {
+    width: 100px;
+    height: 75px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-image: url("../images/woa_logo_only.svg");
+    @media (prefers-color-scheme: dark) {
+        background-image: url("../images/woa_logo_only_light.svg");
+    }
+}

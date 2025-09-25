@@ -1,0 +1,32 @@
+.ogham {
+  font-size: 30px;
+}
+
+#clock {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 30px;
+  height: 50px;
+  @media (max-width: 600px){
+    border-bottom: solid 1px var(--primary-color);
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--primary-color-dark-mode);
+    }
+  }
+ }
+
+#countdown-container {
+  width: 75%;
+  margin: auto;
+}
+
+#countdown-container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  gap: 20px;
+  font-size: 30px;
+}
