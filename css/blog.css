@@ -77,5 +77,8 @@
     @media (prefers-color-scheme: dark) {
         background-image: url("../images/woa_logo_only_light.svg");
     }
+    @media (max-width: 600px){
+      height: 99px;
+    }
 }
 
