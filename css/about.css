@@ -4,11 +4,17 @@
     .about-woa-text {
         margin: auto;
         width: 50%;
+        @media (max-width: 600px){
+          width: 100%;
+        }
     }
     .about-woa-text-list {
         text-align: left;
         width: 30%;
         margin: auto;
+        @media (max-width: 600px){
+          width: 100%;
+        }
     }
 }
 
