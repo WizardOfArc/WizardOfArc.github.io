@@ -12,111 +12,119 @@
     <body>
 
 <div id="clock">
-  <span id="year"></span>
-  <span id="month"></span>
-  <span id="day"></span>
-  <span id="hour"></span>
-  <span id="minute"></span>
-  <span id="second"></span>
+    <span id="year"></span>
+    <span id="month"></span>
+    <span id="day"></span>
+    <span id="hour"></span>
+    <span id="minute"></span>
+    <span id="second"></span>
 </div>
 <div id="countdown-container">
-  <div id="Samhain-countdown">
-    <span class="ogham">&#x169b;&#x1684;&#x1690;&#x168b;&#x1686;&#x1690;&#x1694;&#x1685;</span><span id="Samhain-days"></span>
-  </div>
-  <div id="last_day-countdown">
-    <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1682;&#x1690;&#x1690;&#x1680;&#x1687;&#x1693;&#x1694;&#x168f;&#x1694;&#x1687;&#x1686;</span><span id="last_day-days"></span>
-  </div>
-  <div id="dublin-countdown">
-    <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1693;&#x1688;&#x1686;&#x1690;&#x1685;&#x1688;&#x1690;&#x1680;&#x168c;&#x1691;&#x1680;&#x1687;&#x1688;&#x1694;&#x1694;&#x1680;&#x1693;&#x1694;&#x1688;&#x1694;&#x1682;&#x1683;&#x1694;&#x168b;&#x1694;&#x1687;&#x1680;&#x168c;&#x1691;&#x1680;&#x1681;&#x1690;&#x1694;&#x1682;&#x1693;&#x1680;&#x1690;&#x1690;&#x1688;&#x1686;&#x1690;&#x1680;&#x1689;&#x1682;&#x1694;&#x1690;&#x1688;&#x1686;</span><span id="dublin-days"></span>
-  </div>
-  <div id="birthday-countdown">
-    <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1681;&#x1686;&#x168f;&#x1693;&#x1694;&#x1688;&#x1686;&#x1682;&#x1690;&#x1690;</span><span id="birthday-days"></span>
-  </div>
+    <div id="Samhain-countdown">
+        <span class="ogham">&#x169b;&#x1684;&#x1690;&#x168b;&#x1686;&#x1690;&#x1694;&#x1685;</span
+        ><span id="Samhain-days"></span>
+    </div>
+    <div id="last_day-countdown">
+        <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1682;&#x1690;&#x1690;&#x1680;&#x1687;&#x1693;&#x1694;&#x168f;&#x1694;&#x1687;&#x1686;</span
+        ><span id="last_day-days"></span>
+    </div>
+    <div id="dublin-countdown">
+        <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1693;&#x1688;&#x1686;&#x1690;&#x1685;&#x1688;&#x1690;&#x1680;&#x168c;&#x1691;&#x1680;&#x1687;&#x1688;&#x1694;&#x1694;&#x1680;&#x1693;&#x1694;&#x1688;&#x1694;&#x1682;&#x1683;&#x1694;&#x168b;&#x1694;&#x1687;&#x1680;&#x168c;&#x1691;&#x1680;&#x1681;&#x1690;&#x1694;&#x1682;&#x1693;&#x1680;&#x1690;&#x1690;&#x1688;&#x1686;&#x1690;&#x1680;&#x1689;&#x1682;&#x1694;&#x1690;&#x1688;&#x1686;</span
+        ><span id="dublin-days"></span>
+    </div>
+    <div id="birthday-countdown">
+        <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1681;&#x1686;&#x168f;&#x1693;&#x1694;&#x1688;&#x1686;&#x1682;&#x1690;&#x1690;</span
+        ><span id="birthday-days"></span>
+    </div>
 </div>
 <script>
-  // define some bits:
-  let countDowns = [
-  
-      {
-        target: document.querySelector("#Samhain-days"),
-        deadline: new Date("2025-10-31T07:00:00Z")
-      },
-  
-      {
-        target: document.querySelector("#last_day-days"),
-        deadline: new Date("2025-11-22T13:00:00Z")
-      },
-  
-      {
-        target: document.querySelector("#dublin-days"),
-        deadline: new Date("2025-12-03T16:00:00Z")
-      },
-  
-      {
-        target: document.querySelector("#birthday-days"),
-        deadline: new Date("2026-01-01T00:00:00Z")
-      }
-  
-  ];
+      // define some bits:
+      let countDowns = [
+      
+          {
+            target: document.querySelector("#Samhain-days"),
+            deadline: new Date("2025-10-31T07:00:00Z")
+          },
+      
+          {
+            target: document.querySelector("#last_day-days"),
+            deadline: new Date("2025-11-22T13:00:00Z")
+          },
+      
+          {
+            target: document.querySelector("#dublin-days"),
+            deadline: new Date("2025-12-03T16:00:00Z")
+          },
+      
+          {
+            target: document.querySelector("#birthday-days"),
+            deadline: new Date("2026-01-01T00:00:00Z")
+          }
+      
+      ];
 
-  let year = document.querySelector("#year");
-  let month =document.querySelector("#month");
-  let day =document.querySelector("#day");
-  let hour =document.querySelector("#hour");
-  let minute =document.querySelector("#minute");
-  let second =document.querySelector("#second");
+      let year = document.querySelector("#year");
+      let month =document.querySelector("#month");
+      let day =document.querySelector("#day");
+      let hour =document.querySelector("#hour");
+      let minute =document.querySelector("#minute");
+      let second =document.querySelector("#second");
 
-function update_countdown(days_element, deadline, now){
-  let millisInASecond = 1000;
-  let millisInAMinute = 60 * millisInASecond;
-  let millisInAnHour = 60 * millisInAMinute;
-  let millisInADay = 24 * millisInAnHour;
-  let timeDiff = deadline - now;
-  if (timeDiff < 0) {
-    days_element.innerHTML = "Done";
-    return;
-  }
-  let days = Math.floor(timeDiff / millisInADay);
-  days_element.innerHTML = days;
-}
+    function update_countdown(days_element, deadline, now){
+      let millisInASecond = 1000;
+      let millisInAMinute = 60 * millisInASecond;
+      let millisInAnHour = 60 * millisInAMinute;
+      let millisInADay = 24 * millisInAnHour;
+      let timeDiff = deadline - now;
+      if (timeDiff < 0) {
+        days_element.innerHTML = "Done";
+        return;
+      }
+      let days = Math.floor(timeDiff / millisInADay);
+      if (days < 1) {
+        days_element.innerHTML = "&#128516;INNIU&#128516;";
+        return;
+      }
+      days_element.innerHTML = days;
+    }
 
-function update_clock(y, mo, d, h, min, s, now) {
-      let day = now.getDate();
-      let hours = now.getHours();
-      if (hours < 10) {
-        hours = `0${hours}`;
-      }
-      let minutes = now.getMinutes();
-      if (minutes < 10) {
-        minutes = `0${minutes}`;
-      }
-      let seconds = now.getSeconds();
-      if (seconds < 10) {
-        seconds = `0${seconds}`;
-      }
-      let year = now.getFullYear();
-      let month = now.getMonth() + 1;
-      if (month < 10) {
-        month = `0${month}`;
-      }
-    y.innerHTML = year;
-    mo.innerHTML = month;
-    d.innerHTML = day;
-    h.innerHTML = hours;
-    min.innerHTML = minutes;
-    s.innerHTML = seconds;
-}
+    function update_clock(y, mo, d, h, min, s, now) {
+          let day = now.getDate();
+          let hours = now.getHours();
+          if (hours < 10) {
+            hours = `0${hours}`;
+          }
+          let minutes = now.getMinutes();
+          if (minutes < 10) {
+            minutes = `0${minutes}`;
+          }
+          let seconds = now.getSeconds();
+          if (seconds < 10) {
+            seconds = `0${seconds}`;
+          }
+          let year = now.getFullYear();
+          let month = now.getMonth() + 1;
+          if (month < 10) {
+            month = `0${month}`;
+          }
+        y.innerHTML = year;
+        mo.innerHTML = month;
+        d.innerHTML = day;
+        h.innerHTML = hours;
+        min.innerHTML = minutes;
+        s.innerHTML = seconds;
+    }
 
-function tick() {
-    let now = new Date();
-    // clock bits:
-    update_clock(year, month, day, hour, minute, second, now);
-    countDowns.forEach((cd) => {
-        update_countdown(cd.target, cd.deadline, now);
-    });
-}
+    function tick() {
+        let now = new Date();
+        // clock bits:
+        update_clock(year, month, day, hour, minute, second, now);
+        countDowns.forEach((cd) => {
+            update_countdown(cd.target, cd.deadline, now);
+        });
+    }
 
-setInterval(tick, 1000);
+    setInterval(tick, 1000);
 </script>
         <div class="footer">
     <a href="/">
