@@ -20,6 +20,9 @@
   <span id="second"></span>
 </div>
 <div id="countdown-container">
+  <div id="Samhain-countdown">
+    <span class="ogham">&#x169b;&#x1684;&#x1690;&#x168b;&#x1686;&#x1690;&#x1694;&#x1685;</span><span id="Samhain-days"></span>
+  </div>
   <div id="last_day-countdown">
     <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1682;&#x1690;&#x1690;&#x1680;&#x1687;&#x1693;&#x1694;&#x168f;&#x1694;&#x1687;&#x1686;</span><span id="last_day-days"></span>
   </div>
@@ -33,6 +36,11 @@
 <script>
   // define some bits:
   let countDowns = [
+  
+      {
+        target: document.querySelector("#Samhain-days"),
+        deadline: new Date("2025-10-31T07:00:00Z")
+      },
   
       {
         target: document.querySelector("#last_day-days"),
