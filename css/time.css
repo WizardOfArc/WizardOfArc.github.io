@@ -2,6 +2,51 @@
   font-size: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
+#ogham-switch-container {
+  font-family: "mion", "Helvetica", "Arial", sans-serif;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#toggle-button-holder {
+  width: 75px;
+  height: 25px;
+  border: solid 1px var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 12.5px;
+  margin-right: 4px;
+  margin-left: 4px;
+  display: flex;
+  transition: justify-content 500ms ease-in;
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--primary-color-dark-mode);
+  }
+}
+
+.ogham-selected {
+  justify-content: start;  
+}
+
+.seanchlo-selected {
+  justify-content: end;  
+}
+
+.slider {
+  background-color: var(--primary-color);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--primary-color-dark-mode);
+  }
+}
+
 #clock {
   width: fit-content;
   margin: auto;
@@ -19,6 +64,7 @@
  }
 
 #countdown-container {
+  font-family: "mion", "Helvetica", "Arial", sans-serif;
   width: 75%;
   margin: auto;
 }

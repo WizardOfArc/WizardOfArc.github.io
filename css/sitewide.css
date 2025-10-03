@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'mion';
+  src: url('../fonts/mionchlo.woff2') format('woff2');
+}
+
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   color: var(--primary-color);

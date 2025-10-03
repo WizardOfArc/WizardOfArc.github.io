@@ -20,25 +20,56 @@
     <span id="minute"></span>
     <span id="second"></span>
 </div>
+    <div id="ogham-switch-container">
+      <span id="ogham-label">&#x169b;&#x1691;&#x168c;&#x1686;&#x1690;&#x168b;</span>
+      <div id="toggle-button-holder"><div class="slider"></div></div>
+      <span id="seanchlo-label">seanċló</span>
+    </div>
 <div id="countdown-container">
     <div id="Samhain-countdown">
         <span class="ogham">&#x169b;&#x1684;&#x1690;&#x168b;&#x1686;&#x1690;&#x1694;&#x1685;</span
-        ><span id="Samhain-days"></span>
+        ><span class="seanchlo">saṁain</span><span id="Samhain-days"></span>
     </div>
     <div id="last_day-countdown">
         <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1682;&#x1690;&#x1690;&#x1680;&#x1687;&#x1693;&#x1694;&#x168f;&#x1694;&#x1687;&#x1686;</span
-        ><span id="last_day-days"></span>
+        ><span class="seanchlo">mo lá deiriḋ</span><span id="last_day-days"></span>
     </div>
     <div id="dublin-countdown">
         <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1693;&#x1688;&#x1686;&#x1690;&#x1685;&#x1688;&#x1690;&#x1680;&#x168c;&#x1691;&#x1680;&#x1687;&#x1688;&#x1694;&#x1694;&#x1680;&#x1693;&#x1694;&#x1688;&#x1694;&#x1682;&#x1683;&#x1694;&#x168b;&#x1694;&#x1687;&#x1680;&#x168c;&#x1691;&#x1680;&#x1681;&#x1690;&#x1694;&#x1682;&#x1693;&#x1680;&#x1690;&#x1690;&#x1688;&#x1686;&#x1690;&#x1680;&#x1689;&#x1682;&#x1694;&#x1690;&#x1688;&#x1686;</span
-        ><span id="dublin-days"></span>
+        ><span class="seanchlo">laeṫanta go dtí eitilfimid go baile áṫa cliaṫ</span><span id="dublin-days"></span>
     </div>
     <div id="birthday-countdown">
         <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1681;&#x1686;&#x168f;&#x1693;&#x1694;&#x1688;&#x1686;&#x1682;&#x1690;&#x1690;</span
-        ><span id="birthday-days"></span>
+        ><span class="seanchlo">mo ḃreiṫlá</span><span id="birthday-days"></span>
     </div>
 </div>
 <script>
+      let useOgham = true;
+
+      function toggleOgham() {
+        useOgham = !useOgham;
+        if(useOgham){
+            document.querySelectorAll('.ogham').forEach((item) => {
+                    item.classList.remove("hidden");
+            });
+            document.querySelectorAll('.seanchlo').forEach((item) => {
+                    item.classList.add("hidden");
+            });
+            document.querySelector('#toggle-button-holder').classList.add('ogham-selected');
+            document.querySelector('#toggle-button-holder').classList.remove('seanchlo-selected');
+
+        } else {
+            document.querySelectorAll('.ogham').forEach((item) => {
+                    item.classList.add("hidden");
+            });
+            document.querySelectorAll('.seanchlo').forEach((item) => {
+                    item.classList.remove("hidden");
+            });
+            document.querySelector('#toggle-button-holder').classList.remove('ogham-selected');
+            document.querySelector('#toggle-button-holder').classList.add('seanchlo-selected');
+
+        }
+      }
       // define some bits:
       let countDowns = [
       
@@ -126,6 +157,8 @@
     }
 
     setInterval(tick, 1000);
+
+    document.querySelector("#toggle-button-holder").addEventListener("click", toggleOgham);
 </script>
         <div class="footer">
     <a href="/">
