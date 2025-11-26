@@ -26,10 +26,6 @@
       <span id="seanchlo-label">seanċló</span>
     </div>
 <div id="countdown-container">
-    <div id="last_day-countdown">
-        <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1682;&#x1690;&#x1690;&#x1680;&#x1687;&#x1693;&#x1694;&#x168f;&#x1694;&#x1687;&#x1686;</span
-        ><span class="seanchlo hidden">mo lá deiriḋ</span><span id="last_day-days"></span>
-    </div>
     <div id="dublin-countdown">
         <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1693;&#x1688;&#x1686;&#x1690;&#x1685;&#x1688;&#x1690;&#x1680;&#x168c;&#x1691;&#x1680;&#x1687;&#x1688;&#x1694;&#x1694;&#x1680;&#x1693;&#x1694;&#x1688;&#x1694;&#x1682;&#x1683;&#x1694;&#x168b;&#x1694;&#x1687;&#x1680;&#x168c;&#x1691;&#x1680;&#x1681;&#x1690;&#x1694;&#x1682;&#x1693;&#x1680;&#x1690;&#x1690;&#x1688;&#x1686;&#x1690;&#x1680;&#x1689;&#x1682;&#x1694;&#x1690;&#x1688;&#x1686;</span
         ><span class="seanchlo hidden">laeṫanta go dtí eitilfimid go baile áṫa cliaṫ</span><span id="dublin-days"></span>
@@ -78,28 +74,27 @@
       let countDowns = [
       
           {
-            target: document.querySelector("#last_day-days"),
-            deadline: new Date("2025-11-22T13:00:00Z")
-          },
-      
-          {
             target: document.querySelector("#dublin-days"),
-            deadline: new Date("2025-12-03T16:00:00Z")
+            start_time: new Date("2025-12-03T16:00:00Z")
+            end_time: new Date("2025-12-03T16:00:00Z")
           },
       
           {
             target: document.querySelector("#christmas-days"),
-            deadline: new Date("2025-12-25T01:00:00Z")
+            start_time: new Date("2025-12-25T00:00:00Z")
+            end_time: new Date("2025-12-26T00:00:00Z")
           },
       
           {
             target: document.querySelector("#birthday-days"),
-            deadline: new Date("2026-01-01T01:00:00Z")
+            start_time: new Date("2026-01-01T00:00:00Z")
+            end_time: new Date("2026-01-02T00:00:00Z")
           },
       
           {
             target: document.querySelector("#jos_birthday-days"),
-            deadline: new Date("2026-06-19T01:00:00Z")
+            start_time: new Date("2026-06-19T00:00:00Z")
+            end_time: new Date("2026-06-20T01:00:00Z")
           }
       
       ];
@@ -111,22 +106,40 @@
       let minute =document.querySelector("#minute");
       let second =document.querySelector("#second");
 
-    function update_countdown(days_element, deadline, now){
+    function update_countdown(days_element, start_time, end_time, now){
+      let event_duration = end_time - start_time;
       let millisInASecond = 1000;
       let millisInAMinute = 60 * millisInASecond;
       let millisInAnHour = 60 * millisInAMinute;
       let millisInADay = 24 * millisInAnHour;
-      let timeDiff = deadline - now;
-      let days = Math.ceil(timeDiff / millisInADay);
-      if (Math.abs(timeDiff) < millisInADay) {
-        days_element.innerHTML = "&#128516;INNIU&#128516;";
+      let now_label = event_duration >= millisInADay ? "&#128516INNIU&#128516;": "&#128516;ANOIS&#128516;";
+      let timeDiffToStart = start_time - now;
+      let timeDiffToEnd = end_time - now;
+      if (timeDiffToEnd < 0) {
+        days_element.innerHTML = "&#128516;Done&#128516;";
         return;
       }
-      if (timeDiff < 0) {
-        days_element.innerHTML = "Done";
-        return;
+      if (timeDiffToStart <= 0 && timeDiffToEnd > 0) {
+	      days_element.innerHTML = now_label;
+	      return;
       }
-      days_element.innerHTML = days;
+      let days = Math.floor(timeDiffToStart / millisInADay);
+      let hours = Math.floor((timeDiffToStart - (days * millisInADay)) / millisInAnHour);
+      let minutes = Math.floor((timeDiffToStart - (hours * millisInAnHour)) / millisInAMinute);
+      let seconds = Math.floor((timeDiffToStart - (minutes * millisInAMinute)) / millisInASecond);
+      if (days > 0) {
+	      days_element.innerHTML = `${days} l&#225;`;
+	      return;
+      }
+      if (hours > 0){
+	      days_element.innerHTML = `${hours} n-uaire`;
+	      return;
+      }
+      if (minutes > 0) {
+	      days_element.innerHTML = `${minutes} n&#243;im&#233;ad`;
+	      return;
+      }
+      days_element.innerHTML = `${seconds} soicind`;
     }
 
     function update_clock(y, mo, d, h, min, s, now) {
@@ -161,7 +174,7 @@
         // clock bits:
         update_clock(year, month, day, hour, minute, second, now);
         countDowns.forEach((cd) => {
-            update_countdown(cd.target, cd.deadline, now);
+            update_countdown(cd.target, cd.start_time, cd.end_time, now);
         });
     }
 
