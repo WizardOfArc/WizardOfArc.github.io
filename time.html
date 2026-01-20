@@ -26,18 +26,6 @@
       <span id="seanchlo-label">seanċló</span>
     </div>
 <div id="countdown-container">
-    <div id="dublin-countdown">
-        <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1693;&#x1688;&#x1686;&#x1690;&#x1685;&#x1688;&#x1690;&#x1680;&#x168c;&#x1691;&#x1680;&#x1687;&#x1688;&#x1694;&#x1694;&#x1680;&#x1693;&#x1694;&#x1688;&#x1694;&#x1682;&#x1683;&#x1694;&#x168b;&#x1694;&#x1687;&#x1680;&#x168c;&#x1691;&#x1680;&#x1681;&#x1690;&#x1694;&#x1682;&#x1693;&#x1680;&#x1690;&#x1690;&#x1688;&#x1686;&#x1690;&#x1680;&#x1689;&#x1682;&#x1694;&#x1690;&#x1688;&#x1686;</span
-        ><span class="seanchlo hidden">laeṫanta go dtí eitilfimid go baile áṫa cliaṫ</span><span id="dublin-days"></span>
-    </div>
-    <div id="christmas-countdown">
-        <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1690;&#x1680;&#x1685;&#x1691;&#x1682;&#x1682;&#x1690;&#x168c;</span
-        ><span class="seanchlo hidden">lá nollag</span><span id="christmas-days"></span>
-    </div>
-    <div id="birthday-countdown">
-        <span class="ogham">&#x169b;&#x168b;&#x1691;&#x1680;&#x1681;&#x1686;&#x168f;&#x1693;&#x1694;&#x1688;&#x1686;&#x1682;&#x1690;&#x1690;</span
-        ><span class="seanchlo hidden">mo ḃreiṫlá</span><span id="birthday-days"></span>
-    </div>
     <div id="jos_birthday-countdown">
         <span class="ogham">&#x169b;&#x1681;&#x168f;&#x1693;&#x1694;&#x1688;&#x1686;&#x1682;&#x1690;&#x1690;&#x1680;&#x1694;&#x1691;&#x1691;</span
         ><span class="seanchlo hidden">breiṫlá ió</span><span id="jos_birthday-days"></span>
@@ -72,24 +60,6 @@
       }
       // define some bits:
       let countDowns = [
-      
-          {
-            target: document.querySelector("#dublin-days"),
-            start_time: new Date("2025-12-03T16:00:00Z"),
-            end_time: new Date("2025-12-03T16:00:00Z")
-          },
-      
-          {
-            target: document.querySelector("#christmas-days"),
-            start_time: new Date("2025-12-25T00:00:00Z"),
-            end_time: new Date("2025-12-26T00:00:00Z")
-          },
-      
-          {
-            target: document.querySelector("#birthday-days"),
-            start_time: new Date("2026-01-01T00:00:00Z"),
-            end_time: new Date("2026-01-02T00:00:00Z")
-          },
       
           {
             target: document.querySelector("#jos_birthday-days"),
