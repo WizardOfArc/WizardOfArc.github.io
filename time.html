@@ -26,10 +26,6 @@
       <span id="seanchlo-label">seanċló</span>
     </div>
 <div id="countdown-container">
-    <div id="spring_equinox-countdown">
-        <span class="ogham">&#x169b;&#x1689;&#x1691;&#x1691;&#x1685;&#x1691;&#x1689;&#x1686;&#x1688;&#x1680;&#x1690;&#x1685;&#x1680;&#x1693;&#x1690;&#x168f;&#x168f;&#x1690;&#x1694;&#x168c;&#x1686;</span
-        ><span class="seanchlo hidden">cónoċt an earraiġ</span><span id="spring_equinox-days"></span>
-    </div>
     <div id="bealtaine-countdown">
         <span class="ogham">&#x169b;&#x1681;&#x1693;&#x1690;&#x1682;&#x1688;&#x1690;&#x1694;&#x1685;&#x1693;</span
         ><span class="seanchlo hidden">bealtaine</span><span id="bealtaine-days"></span>
@@ -66,6 +62,10 @@
         <span class="ogham">&#x169b;&#x1682;&#x1690;&#x1690;&#x1680;&#x1683;&#x1686;&#x1693;&#x1693;&#x1694;&#x1682;&#x1693;&#x1680;&#x169a;&#x1690;&#x1690;&#x1687;&#x168f;&#x1690;&#x1694;&#x168c;</span
         ><span class="seanchlo hidden">lá ḟéile pádraig</span><span id="paddys-days"></span>
     </div>
+    <div id="spring_equinox-countdown">
+        <span class="ogham">&#x169b;&#x1689;&#x1691;&#x1691;&#x1685;&#x1691;&#x1689;&#x1686;&#x1688;&#x1680;&#x1690;&#x1685;&#x1680;&#x1693;&#x1690;&#x168f;&#x168f;&#x1690;&#x1694;&#x168c;&#x1686;</span
+        ><span class="seanchlo hidden">cónoċt an earraiġ</span><span id="spring_equinox-days"></span>
+    </div>
 </div>
 <script>
       let useOgham = true;
@@ -96,12 +96,6 @@
       }
       // define some bits:
       let countDowns = [
-      
-          {
-            target: document.querySelector("#spring_equinox-days"),
-            start_time: new Date("2026-03-20T14:46:00Z"),
-            end_time: new Date("2026-03-20T14:46:59Z")
-          },
       
           {
             target: document.querySelector("#bealtaine-days"),
@@ -155,6 +149,12 @@
             target: document.querySelector("#paddys-days"),
             start_time: new Date("2027-03-17T00:00:00Z"),
             end_time: new Date("2027-03-18T00:00:00Z")
+          },
+      
+          {
+            target: document.querySelector("#spring_equinox-days"),
+            start_time: new Date("2027-03-20T14:46:00Z"),
+            end_time: new Date("2027-03-20T14:46:59Z")
           }
       
       ];
