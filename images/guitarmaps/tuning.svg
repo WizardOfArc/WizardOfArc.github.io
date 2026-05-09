@@ -1,0 +1,90 @@
+
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!--- string tuning -->
+  <text text-anchor="middle" font-family="sans-serif" x="18" y="10" font-size="10" fill="#000000" >E</text>
+  <text text-anchor="middle" font-family="sans-serif" x="45" y="10" font-size="10" fill="#000000" >A</text>
+  <text text-anchor="middle" font-family="sans-serif" x="72" y="10" font-size="10" fill="#000000" >D</text>
+
+  <text text-anchor="middle" font-family="sans-serif" x="98" y="10" font-size="10" fill="#000000" >G</text>
+  <text text-anchor="middle" font-family="sans-serif" x="125" y="10" font-size="10" fill="#000000" >B</text>
+  <text text-anchor="middle" font-family="sans-serif" x="152" y="10" font-size="10" fill="#000000" >e</text>
+
+  <!-- the neck and warp -->
+  <rect id="neck" x="10" y="15" width="150" height="670" fill="#fff79f" stroke="#cccccc" stroke-width="1"/>
+  <line id="the_warp" x1="111" y1="15" x2="111" y2="685" stroke="#ffb7b7" stroke-width="5" stroke-dasharray="10 3" />
+
+  <!-- dots -->
+  <circle id="fret_3_dot" cx="85" cy="137" r="6" fill="#000000" />
+  <circle id="fret_5_dot" cx="85" cy="249" r="6" fill="#000000" />
+  <circle id="fret_7_dot" cx="85" cy="359" r="6" fill="#000000" />
+  <circle id="fret_9_dot" cx="85" cy="469" r="6" fill="#000000" />
+  <circle id="fret_12_dot_left" cx="58" cy="634" r="6" fill="#000000" />
+  <circle id="fret_12_dot_right" cx="112" cy="634" r="6" fill="#000000" />
+
+  <!-- frets -->
+  <line id="nut" x1="10" y1="15" x2="160" y2="15" stroke="#000000" stroke-width="8"/>
+
+  <line id="fret01" x1="10" y1="56" x2="160" y2="56" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret02" x1="10" y1="111" x2="160" y2="111" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret03" x1="10" y1="166" x2="160" y2="166" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret04" x1="10" y1="221" x2="160" y2="221" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret05" x1="10" y1="276" x2="160" y2="276" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret06" x1="10" y1="331" x2="160" y2="331" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret07" x1="10" y1="386" x2="160" y2="386" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret08" x1="10" y1="441" x2="160" y2="441" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret09" x1="10" y1="496" x2="160" y2="496" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret10" x1="10" y1="551" x2="160" y2="551" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret11" x1="10" y1="606" x2="160" y2="606" stroke="#000000" stroke-width="1.5"/>
+  <line id="fret12" x1="10" y1="661" x2="160" y2="661" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- Thin black grid lines -->
+  <line id="e_string" x1="18" y1="15" x2="18" y2="685" stroke="#000000" stroke-width="0.5"/>
+  <line id="a_string" x1="45" y1="15" x2="45" y2="685" stroke="#000000" stroke-width="0.5"/>
+  <line id="d_string" x1="72" y1="15" x2="72" y2="685" stroke="#000000" stroke-width="0.5"/>
+
+  <line id="g_string" x1="98" y1="15" x2="98" y2="685" stroke="#000000" stroke-width="0.5"/>
+  <line id="b_string" x1="125" y1="15" x2="125" y2="685" stroke="#000000" stroke-width="0.5"/>
+  <line id="e_string_2" x1="152" y1="15" x2="152" y2="685" stroke="#000000" stroke-width="0.5"/>
+
+  <line x1="18" y1="267" x2="45" y2="6" stroke="orange" stroke-width="2" stroke-dasharray="10 3" />
+  <circle cx="18" cy="267" r="8" fill="#ffff00" stroke="red"/>
+  <text text-anchor="middle" font-family="sans-serif" x="18" y="271" font-size="10" fill="red" >A</text>
+  <circle cx="45" cy="6" r="8" fill="#ffff00" stroke="red"/>
+  <text text-anchor="middle" font-family="sans-serif" x="45" y="10" font-size="10" fill="red" >A</text>
+
+  <line x1="45" y1="267" x2="72" y2="6" stroke="#0000ff" stroke-width="2" stroke-dasharray="10 3" />
+  <circle id="fifth" cx="45" cy="267" r="8" fill="#0000ff" />
+  <text text-anchor="middle" font-family="sans-serif" x="45" y="271" font-size="10" fill="#ffffff" >D</text>
+  <circle id="fifth" cx="72" cy="6" r="8" fill="#0000ff" />
+  <text text-anchor="middle" font-family="sans-serif" x="72" y="10" font-size="10" fill="#ffffff" >D</text>
+
+  <line x1="73" y1="267" x2="99" y2="6" stroke="#ff0000" stroke-width="2" stroke-dasharray="10 3" />
+  <circle cx="73" cy="267" r="8" fill="#ff0000" />
+  <text text-anchor="middle" font-family="sans-serif" x="73" y="271" font-size="10" fill="#ffffff" >G</text>
+  <circle cx="99" cy="6" r="8" fill="#ff0000" />
+  <text text-anchor="middle" font-family="sans-serif" x="99" y="10" font-size="10" fill="#ffffff" >G</text>
+
+  <line x1="99" y1="212" x2="126" y2="6" stroke="green" stroke-width="2" stroke-dasharray="10 3" />
+  <circle id="third" cx="99" cy="212" r="8" fill="green" />
+  <text text-anchor="middle" font-family="sans-serif" x="99" y="216" font-size="10" fill="#ffffff" >B</text>
+  <circle id="third" cx="126" cy="6" r="8" fill="green" />
+  <text text-anchor="middle" font-family="sans-serif" x="126" y="10" font-size="10" fill="#ffffff" >B</text>
+
+  <line x1="126" y1="267" x2="153" y2="6" stroke="purple" stroke-width="2" stroke-dasharray="10 3" />
+  <circle id="fifth" cx="153" cy="6" r="8" fill="purple" />
+  <text text-anchor="middle" font-family="sans-serif" x="153" y="10" font-size="10" fill="#ffffff" >E</text>
+  <circle id="fifth" cx="126" cy="267" r="8" fill="purple" />
+  <text text-anchor="middle" font-family="sans-serif" x="126" y="271" font-size="10" fill="#ffffff" >E</text>
+
+</svg>
+
+<!--
+The text Element
+The text element renders text at a specific position. Its core attributes are:
+
+x: The x-coordinate of the text's anchor point.
+y: The y-coordinate of the text's baseline (not the top of the text).
+SVG text inherits standard font-related CSS properties and presentation attributes, including font-family, font-size, font-weight, font-style, and fill (to set the text color).
+
+
+-->
