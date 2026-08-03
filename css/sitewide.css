@@ -73,6 +73,7 @@ p {
     height: 75px;
     margin: auto;
     margin-bottom: 20px;
+    position: relative;
     background-image: url("../images/woa_logo_only.svg");
     @media (prefers-color-scheme: dark) {
         background-image: url("../images/woa_logo_only_light.svg");

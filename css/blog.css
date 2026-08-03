@@ -45,8 +45,8 @@
 }
 
 .posts-container {
-    height: 31vh;
-    overflow: auto;
+    /* height: 31vh; */
+    /* overflow: auto; */
 }
 
 .blog-post {
