@@ -1,6 +1,9 @@
 #the-counties {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: solid red 2px;
 }
 #county-graph {
     img {
