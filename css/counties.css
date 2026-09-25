@@ -4,6 +4,9 @@
     justify-content: center;
     margin: auto;
     border-top: var(--primary-color) solid 2px;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 #county-graph {
     padding: 10px;
