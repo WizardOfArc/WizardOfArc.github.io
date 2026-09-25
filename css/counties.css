@@ -6,13 +6,15 @@
     border: solid red 2px;
 }
 #county-graph {
+    padding: 10px;
     img {
-        width: 400px;
+        height: 400px;
     }
 }
 
 #county-graph-idealized {
+    padding: 10px;
     img {
-        width: 400px;
+        height: 400px;
     }
 }
