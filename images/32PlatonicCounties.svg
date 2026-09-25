@@ -151,13 +151,13 @@
 <!-- Kerry -->
 <g id="node13" class="node">
 <title>Kerry</title>
-<ellipse fill="lightblue" stroke="black" cx="552.28" cy="-90" rx="36.51" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="552.28" y="-84.95" font-family="Times New Roman,serif" font-size="14.00">Ciarrai</text>
+<ellipse fill="lightblue" stroke="black" cx="588.28" cy="-54" rx="36.51" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="588.28" y="-48.95" font-family="Times New Roman,serif" font-size="14.00">Ciarrai</text>
 </g>
 <!-- Cork&#45;&#45;Kerry -->
 <g id="edge11" class="edge">
 <title>Cork&#45;&#45;Kerry</title>
-<path fill="none" stroke="black" d="M801.74,-27.64C744.72,-41.89 638.87,-68.35 585.25,-81.76"/>
+<path fill="none" stroke="black" d="M797.82,-24.07C748.86,-31.06 669.29,-42.43 623.58,-48.96"/>
 </g>
 <!-- Limerick -->
 <g id="node18" class="node">
@@ -296,7 +296,7 @@
 <!-- Kerry&#45;&#45;Limerick -->
 <g id="edge12" class="edge">
 <title>Kerry&#45;&#45;Limerick</title>
-<path fill="none" stroke="black" d="M526.2,-103.04C501.56,-115.36 464.61,-133.83 438.65,-146.81"/>
+<path fill="none" stroke="black" d="M564.75,-68.12C531.2,-88.25 469.83,-125.07 434.74,-146.12"/>
 </g>
 <!-- Laois -->
 <g id="node16" class="node">
