@@ -1,5 +1,15 @@
+#the-counties {
+    display: flex;
+
+}
 #county-graph {
+    img {
+        width: 400px;
+    }
 }
 
 #county-graph-idealized {
+    img {
+        width: 400px;
+    }
 }
