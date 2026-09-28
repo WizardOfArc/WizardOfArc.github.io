@@ -18,7 +18,7 @@
 <g id="node5" class="node">
 <title>0</title>
 <polygon fill="lightgreen" stroke="black" points="429.43,-586.37 369.18,-586.37 369.18,-550.37 429.43,-550.37 429.43,-586.37"/>
-<text xml:space="preserve" text-anchor="middle" x="399.31" y="-563.32" font-family="Times New Roman,serif" font-size="14.00">0 Major</text>
+<text xml:space="preserve" text-anchor="middle" x="399.31" y="-563.32" font-family="Times New Roman,serif" font-size="14.00">0M(0,4,7)</text>
 </g>
 <!-- t048&#45;&gt;0 -->
 <g id="edge25" class="edge">
@@ -30,8 +30,8 @@
 <!-- 4 -->
 <g id="node6" class="node">
 <title>4</title>
-<polygon fill="lightgreen" stroke="black" points="70.73,-663.05 10.48,-663.05 10.48,-627.05 70.73,-627.05 70.73,-663.05"/>
-<text xml:space="preserve" text-anchor="middle" x="40.6" y="-640" font-family="Times New Roman,serif" font-size="14.00">4 Major</text>
+<polygon fill="lightgreen" stroke="black" points="75.73,-663.05 5.48,-663.05 5.48,-627.05 75.73,-627.05 75.73,-663.05"/>
+<text xml:space="preserve" text-anchor="middle" x="40.6" y="-640" font-family="Times New Roman,serif" font-size="14.00">4M (4,8,11)</text>
 </g>
 <!-- t048&#45;&gt;4 -->
 <g id="edge26" class="edge">
@@ -44,7 +44,7 @@
 <g id="node7" class="node">
 <title>8</title>
 <polygon fill="lightgreen" stroke="black" points="202.49,-747.29 142.24,-747.29 142.24,-711.29 202.49,-711.29 202.49,-747.29"/>
-<text xml:space="preserve" text-anchor="middle" x="172.36" y="-724.24" font-family="Times New Roman,serif" font-size="14.00">8 Major</text>
+<text xml:space="preserve" text-anchor="middle" x="172.36" y="-724.24" font-family="Times New Roman,serif" font-size="14.00">8M (8,0,3)</text>
 </g>
 <!-- t048&#45;&gt;8 -->
 <g id="edge27" class="edge">
@@ -57,7 +57,7 @@
 <g id="node18" class="node">
 <title>m1</title>
 <ellipse fill="lightblue" stroke="black" cx="400.6" cy="-1005.05" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="400.6" y="-1000" font-family="Times New Roman,serif" font-size="14.00">1 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="400.6" y="-1000" font-family="Times New Roman,serif" font-size="14.00">1m (1,4,8)</text>
 </g>
 <!-- t048&#45;&gt;m1 -->
 <g id="edge37" class="edge">
@@ -70,7 +70,7 @@
 <g id="node22" class="node">
 <title>m5</title>
 <ellipse fill="lightblue" stroke="black" cx="402.76" cy="-873.29" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="402.76" y="-868.24" font-family="Times New Roman,serif" font-size="14.00">5 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="402.76" y="-868.24" font-family="Times New Roman,serif" font-size="14.00">5m (5,8,0)</text>
 </g>
 <!-- t048&#45;&gt;m5 -->
 <g id="edge38" class="edge">
@@ -83,7 +83,7 @@
 <g id="node26" class="node">
 <title>m9</title>
 <ellipse fill="lightblue" stroke="black" cx="477.28" cy="-646.35" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="477.28" y="-641.3" font-family="Times New Roman,serif" font-size="14.00">9 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="477.28" y="-641.3" font-family="Times New Roman,serif" font-size="14.00">9m (9,0,4)</text>
 </g>
 <!-- t048&#45;&gt;m9 -->
 <g id="edge39" class="edge">
@@ -102,7 +102,7 @@
 <g id="node8" class="node">
 <title>1</title>
 <polygon fill="lightgreen" stroke="black" points="694.25,-1023.05 634,-1023.05 634,-987.05 694.25,-987.05 694.25,-1023.05"/>
-<text xml:space="preserve" text-anchor="middle" x="664.12" y="-1000" font-family="Times New Roman,serif" font-size="14.00">1 Major</text>
+<text xml:space="preserve" text-anchor="middle" x="664.12" y="-1000" font-family="Times New Roman,serif" font-size="14.00">1M(1,5,8)</text>
 </g>
 <!-- t159&#45;&gt;1 -->
 <g id="edge28" class="edge">
@@ -115,7 +115,7 @@
 <g id="node9" class="node">
 <title>5</title>
 <polygon fill="lightgreen" stroke="black" points="706.49,-891.29 646.24,-891.29 646.24,-855.29 706.49,-855.29 706.49,-891.29"/>
-<text xml:space="preserve" text-anchor="middle" x="676.36" y="-868.24" font-family="Times New Roman,serif" font-size="14.00">5 Major</text>
+<text xml:space="preserve" text-anchor="middle" x="676.36" y="-868.24" font-family="Times New Roman,serif" font-size="14.00">5M (5,9,0)</text>
 </g>
 <!-- t159&#45;&gt;5 -->
 <g id="edge29" class="edge">
@@ -128,7 +128,7 @@
 <g id="node10" class="node">
 <title>9</title>
 <polygon fill="lightgreen" stroke="black" points="617.57,-664.35 557.32,-664.35 557.32,-628.35 617.57,-628.35 617.57,-664.35"/>
-<text xml:space="preserve" text-anchor="middle" x="587.44" y="-641.3" font-family="Times New Roman,serif" font-size="14.00">9 Major</text>
+<text xml:space="preserve" text-anchor="middle" x="587.44" y="-641.3" font-family="Times New Roman,serif" font-size="14.00">9M (9,1,4)</text>
 </g>
 <!-- t159&#45;&gt;9 -->
 <g id="edge30" class="edge">
@@ -141,7 +141,7 @@
 <g id="node19" class="node">
 <title>m2</title>
 <ellipse fill="lightblue" stroke="black" cx="1024.12" cy="-645.05" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="1024.12" y="-640" font-family="Times New Roman,serif" font-size="14.00">2 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="1024.12" y="-640" font-family="Times New Roman,serif" font-size="14.00">2m (2,5,9)</text>
 </g>
 <!-- t159&#45;&gt;m2 -->
 <g id="edge40" class="edge">
@@ -154,7 +154,7 @@
 <g id="node23" class="node">
 <title>m6</title>
 <ellipse fill="lightblue" stroke="black" cx="665.42" cy="-568.37" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="665.42" y="-563.32" font-family="Times New Roman,serif" font-size="14.00">6 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="665.42" y="-563.32" font-family="Times New Roman,serif" font-size="14.00">6m (6,9,1)</text>
 </g>
 <!-- t159&#45;&gt;m6 -->
 <g id="edge41" class="edge">
@@ -167,7 +167,7 @@
 <g id="node27" class="node">
 <title>m10</title>
 <ellipse fill="lightblue" stroke="black" cx="892.36" cy="-657.29" rx="45.21" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="892.36" y="-652.24" font-family="Times New Roman,serif" font-size="14.00">10 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="892.36" y="-652.24" font-family="Times New Roman,serif" font-size="14.00">10m (10,1,5)</text>
 </g>
 <!-- t159&#45;&gt;m10 -->
 <g id="edge42" class="edge">
@@ -186,7 +186,7 @@
 <g id="node11" class="node">
 <title>2</title>
 <polygon fill="lightgreen" stroke="black" points="1054.25,-399.53 994,-399.53 994,-363.53 1054.25,-363.53 1054.25,-399.53"/>
-<text xml:space="preserve" text-anchor="middle" x="1024.12" y="-376.48" font-family="Times New Roman,serif" font-size="14.00">2 Major</text>
+<text xml:space="preserve" text-anchor="middle" x="1024.12" y="-376.48" font-family="Times New Roman,serif" font-size="14.00">2M(2,6,9)</text>
 </g>
 <!-- t2610&#45;&gt;2 -->
 <g id="edge31" class="edge">
@@ -198,8 +198,8 @@
 <!-- 6 -->
 <g id="node12" class="node">
 <title>6</title>
-<polygon fill="lightgreen" stroke="black" points="695.54,-476.21 635.29,-476.21 635.29,-440.21 695.54,-440.21 695.54,-476.21"/>
-<text xml:space="preserve" text-anchor="middle" x="665.42" y="-453.16" font-family="Times New Roman,serif" font-size="14.00">6 Major</text>
+<polygon fill="lightgreen" stroke="black" points="697.54,-476.21 633.29,-476.21 633.29,-440.21 697.54,-440.21 697.54,-476.21"/>
+<text xml:space="preserve" text-anchor="middle" x="665.42" y="-453.16" font-family="Times New Roman,serif" font-size="14.00">6M(6,10,1)</text>
 </g>
 <!-- t2610&#45;&gt;6 -->
 <g id="edge32" class="edge">
@@ -211,8 +211,8 @@
 <!-- 10 -->
 <g id="node13" class="node">
 <title>10</title>
-<polygon fill="lightgreen" stroke="black" points="925.86,-351.29 858.86,-351.29 858.86,-315.29 925.86,-315.29 925.86,-351.29"/>
-<text xml:space="preserve" text-anchor="middle" x="892.36" y="-328.24" font-family="Times New Roman,serif" font-size="14.00">10 Major</text>
+<polygon fill="lightgreen" stroke="black" points="928.86,-351.29 856.86,-351.29 856.86,-315.29 928.86,-315.29 928.86,-351.29"/>
+<text xml:space="preserve" text-anchor="middle" x="892.36" y="-328.24" font-family="Times New Roman,serif" font-size="14.00">10M(10,2,5)</text>
 </g>
 <!-- t2610&#45;&gt;10 -->
 <g id="edge33" class="edge">
@@ -225,7 +225,7 @@
 <g id="node20" class="node">
 <title>m3</title>
 <ellipse fill="lightblue" stroke="black" cx="604.36" cy="-153.29" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="604.36" y="-148.24" font-family="Times New Roman,serif" font-size="14.00">3 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="604.36" y="-148.24" font-family="Times New Roman,serif" font-size="14.00">3m (3,6,10)</text>
 </g>
 <!-- t2610&#45;&gt;m3 -->
 <g id="edge43" class="edge">
@@ -238,7 +238,7 @@
 <g id="node24" class="node">
 <title>m7</title>
 <ellipse fill="lightblue" stroke="black" cx="664.12" cy="-21.53" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="664.12" y="-16.48" font-family="Times New Roman,serif" font-size="14.00">7 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="664.12" y="-16.48" font-family="Times New Roman,serif" font-size="14.00">7m (7,10,2)</text>
 </g>
 <!-- t2610&#45;&gt;m7 -->
 <g id="edge44" class="edge">
@@ -251,7 +251,7 @@
 <g id="node28" class="node">
 <title>m11</title>
 <ellipse fill="lightblue" stroke="black" cx="587.44" cy="-380.24" rx="45.21" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="587.44" y="-375.19" font-family="Times New Roman,serif" font-size="14.00">11 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="587.44" y="-375.19" font-family="Times New Roman,serif" font-size="14.00">11m (11,2,6)</text>
 </g>
 <!-- t2610&#45;&gt;m11 -->
 <g id="edge45" class="edge">
@@ -269,8 +269,8 @@
 <!-- 3 -->
 <g id="node14" class="node">
 <title>3</title>
-<polygon fill="lightgreen" stroke="black" points="430.73,-39.53 370.48,-39.53 370.48,-3.53 430.73,-3.53 430.73,-39.53"/>
-<text xml:space="preserve" text-anchor="middle" x="400.6" y="-16.48" font-family="Times New Roman,serif" font-size="14.00">3 Major</text>
+<polygon fill="lightgreen" stroke="black" points="435.73,-39.53 365.48,-39.53 365.48,-3.53 435.73,-3.53 435.73,-39.53"/>
+<text xml:space="preserve" text-anchor="middle" x="400.6" y="-16.48" font-family="Times New Roman,serif" font-size="14.00">3M(3,7,10)</text>
 </g>
 <!-- t3711&#45;&gt;3 -->
 <g id="edge34" class="edge">
@@ -282,8 +282,8 @@
 <!-- 7 -->
 <g id="node15" class="node">
 <title>7</title>
-<polygon fill="lightgreen" stroke="black" points="490.49,-171.29 430.24,-171.29 430.24,-135.29 490.49,-135.29 490.49,-171.29"/>
-<text xml:space="preserve" text-anchor="middle" x="460.36" y="-148.24" font-family="Times New Roman,serif" font-size="14.00">7 Major</text>
+<polygon fill="lightgreen" stroke="black" points="425.49,-171.29 425.24,-135.29 500.49,-135.29 500.49,-171.29"/>
+<text xml:space="preserve" text-anchor="middle" x="460.36" y="-148.24" font-family="Times New Roman,serif" font-size="14.00">7M (7,11,2)</text>
 </g>
 <!-- t3711&#45;&gt;7 -->
 <g id="edge35" class="edge">
@@ -295,8 +295,8 @@
 <!-- 11 -->
 <g id="node16" class="node">
 <title>11</title>
-<polygon fill="lightgreen" stroke="black" points="510.78,-398.24 443.78,-398.24 443.78,-362.24 510.78,-362.24 510.78,-398.24"/>
-<text xml:space="preserve" text-anchor="middle" x="477.28" y="-375.19" font-family="Times New Roman,serif" font-size="14.00">11 Major</text>
+<polygon fill="lightgreen" stroke="black" points="515.78,-398.24 438.78,-398.24 438.78,-362.24 515.78,-362.24 515.78,-398.24"/>
+<text xml:space="preserve" text-anchor="middle" x="477.28" y="-375.19" font-family="Times New Roman,serif" font-size="14.00">11M (11,3,6)</text>
 </g>
 <!-- t3711&#45;&gt;11 -->
 <g id="edge36" class="edge">
@@ -309,7 +309,7 @@
 <g id="node17" class="node">
 <title>m0</title>
 <ellipse fill="lightblue" stroke="black" cx="399.31" cy="-458.21" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="399.31" y="-453.16" font-family="Times New Roman,serif" font-size="14.00">0 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="399.31" y="-453.16" font-family="Times New Roman,serif" font-size="14.00">0m(0,3,7)</text>
 </g>
 <!-- t3711&#45;&gt;m0 -->
 <g id="edge48" class="edge">
@@ -322,7 +322,7 @@
 <g id="node21" class="node">
 <title>m4</title>
 <ellipse fill="lightblue" stroke="black" cx="40.6" cy="-381.53" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="40.6" y="-376.48" font-family="Times New Roman,serif" font-size="14.00">4 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="40.6" y="-376.48" font-family="Times New Roman,serif" font-size="14.00">4m (4,7,11)</text>
 </g>
 <!-- t3711&#45;&gt;m4 -->
 <g id="edge46" class="edge">
@@ -335,7 +335,7 @@
 <g id="node25" class="node">
 <title>m8</title>
 <ellipse fill="lightblue" stroke="black" cx="172.36" cy="-297.29" rx="40.6" ry="18"/>
-<text xml:space="preserve" text-anchor="middle" x="172.36" y="-292.24" font-family="Times New Roman,serif" font-size="14.00">8 minor</text>
+<text xml:space="preserve" text-anchor="middle" x="172.36" y="-292.24" font-family="Times New Roman,serif" font-size="14.00">8m (8,11,3)</text>
 </g>
 <!-- t3711&#45;&gt;m8 -->
 <g id="edge47" class="edge">
